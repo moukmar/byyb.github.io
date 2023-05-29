@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Roman</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="icon" href="file:///C:/Users/HP/Desktop/autre%20trucs/site%20bis/squelette.html" type="photos/byblogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;500&family=Prompt:ital,wght@0,100;0,200;0,300;0,700;0,800;0,900;1,100;1,200&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rozha+One&display=swap" rel="stylesheet">
+</head>
+<style>
+    @font-face {
+        font-family: "Harmony";
+        src: url("fonts/Harmony.otf") format("truetype");
+        font-family: "Hand";
+        src: url("fonts/ShadowHand.ttf") format("truetype");
+        font-family: "Barcelony";
+        src: url("fonts/Barcelony.ttf") format("truetype");
+        font-family: "Soria";
+        src: url("fonts/soria-font.TTF") format("truetype");
+        }
+
+    body {
+        margin: 0;
+        padding: 0;
+        color: #CECECE;
+        background-color: #CECECE;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    header {
+        background-color: #CECECE;
+        color: black;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    header h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 99px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+        font-family: 'Cinzel Decorative', cursive;
+        color: transparent;
+        -webkit-text-stroke: 2px #111D4A;
+        background: url(photos/back.png);
+        -webkit-background-clip: text;
+        background-position: 0 0;
+        animation: back 20s linear infinite;
+    }
+
+    @keyframes back{
+        100%{
+            background-position: 2000px 0;
+        }
+    }
+
+    .main-ligne {
+        border: none;
+        height: 1px;
+        background-color: #333;
+        margin: 10px 50px;
+    }
+
+    .nav-items {
+        margin-top: 30px;
+        margin-bottom: 170px;
+    }
+
+    .nav-items a {
+        color: black;
+        text-decoration: none;
+        margin-right: 20px;
+        font-family: 'Prompt', sans-serif;
+        position: relative;
+    }
+
+    .nav-items a::after {
+        content: '';
+        width: 0;
+        height: 3px;
+        position: absolute;
+        bottom: -1px;
+        left: 50%;  
+        transform : translateX(-50%);
+        background: black;
+        transition: width 0.3s;
+    }
+
+    .nav-items a:hover::after {
+        width: 50%;
+    }
+
+    section {
+        text-align: center;
+    }
+
+    h2 {
+        color: #111222;
+        font-family: "Soria", serif;
+        font-size: 100px;
+        font-weight: 100;
+        margin-bottom: 0em;
+    }
+
+    h3 {
+        margin-top: 0em;
+        color: #111D4A;
+        font-size: 30px;
+    }
+
+    h4 {
+        margin-top: 60px;
+        color: black;
+        font-size: 20px;
+        font-family: "Prompt", sans-serif;
+        font-weight: 200;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .oeuvres {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        max-width: 800px;
+        margin: 0 auto;
+        flex: 1;
+        display: flex;
+        justify-content: center
+    }
+
+    .oeuvres div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+    }
+
+    .oeuvres img {
+        width: 300px;
+        height: auto;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    .oeuvres img:hover {
+        transform: scale(1.1);
+    }
+
+
+    .oeuvres div:hover h5 {
+  transform: scale(1.2);
+}
+
+    .oeuvres h5 {
+        color: #16697A;
+        font-family: "Rozha One", serif;
+        font-size: 30px;
+        margin-top: 80px;
+        margin: 0px;
+        position: relative;
+        font-weight: 500;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .oeuvres h6 {
+        color: #C1292E;
+        margin-top: 0px;
+        font-size: 20px;
+        font-family: "Raleway", serif;
+        font-weight: 500;
+    }
+
+    .oeuvre1 h5 {
+        color: #650D3F;
+    }
+
+    .oeuvre1 h6 {
+        color: #2E8A76;
+    }
+
+    .oeuvre2 h5 {
+        color: #8A0000;
+    }
+
+    .oeuvre2 h6 {
+        color: #0F4C2F;
+    }
+
+    .oeuvre3 h5 {
+        color: #033E40;
+    }
+
+    .oeuvre3 h6 {
+        color: #4A3012;
+    }
+
+    .floating-element {
+        position: relative;
+        animation: floatingAnimation 3s infinite ease-in-out;
+    }
+
+    @keyframes floatingAnimation {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-30%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    .mars {
+        width: 65px;
+        margin-top: 100px;
+        margin-bottom: 150px;
+        position: relative;
+        animation: floatingAnimation 3s infinite ease-in-out;
+    }
+
+    
+</style>
+<body>
+    <header>
+        <h1>BOOST YOUR BAC</h1>
+        <hr class="main-ligne">
+        <div class="nav-items">
+            <a href="squelette.html"><i class="uil uil-estate"></i> Accueil</a>
+            <a href="oeuvre.html"><i class="uil uil-book-open"></i> Oeuvre</a>
+            <a href="mouvement.html"><i class="uil uil-edit-alt"></i> Mouvements</a>
+            <a href="méthodologie.html"><i class="uil uil-setting"></i> Méthodologie</a>
+            <a href="squelette.html#apropos"><i class="uil uil-info-circle"></i> À propos</a>
+            <a href="joinus.html"><i class="uil uil-message"></i> Join us</a>
+        </div>
+    </header>
+
+    <section>
+        <h2>Le roman et le récit</h2>
+        <h3>du Moyen Age au XXIe siècle</h3>
+        <h4>Choisissez parmis les trois oeuvres au programme celle qui vous intéresse :</h4>
+
+        <div class="second">
+        <div class="oeuvres">
+            <div class="oeuvre1">
+                <a href="manonlescaut.html"><img class="couv-1" src="photos/manonlescaut.jpg">
+                <h5>Manon Lescaut</h5>
+                <h6>Abbé Prévost</h6></a>
+            </div>
+            <div class="oeuvre2">
+                <a href="sido.html"><img class="couv-1" src="photos/sido.jpg">
+                <h5>Sido</h5>
+                <h6>Colette</h6></a>
+            </div>
+            <div class="oeuvre3">
+                <a href="peaudechagrin.html"><img class="couv-3" src="photos/peaudechagrin.jpg">
+                <h5>La Peau de chagrin</h5>
+                <h6>Balzac</h6></a>
+            </div>
+        </div>
+        </div>
+        <img class="mars" src="photos/mars.png">
+    </section>
+</body>
+</html>

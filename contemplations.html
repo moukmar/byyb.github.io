@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Les caractères</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="icon" href="file:///C:/Users/HP/Desktop/autre%20trucs/site%20bis/squelette.html" type="photos/byblogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;500&family=Prompt:ital,wght@0,100;0,200;0,300;0,700;0,800;0,900;1,100;1,200&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rozha+One&display=swap" rel="stylesheet">
+</head>
+<style>
+    @font-face {
+        font-family: "Harmony";
+        src: url("fonts/Harmony.otf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Hand";
+        src: url("fonts/ShadowHand.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Barcelony";
+        src: url("fonts/Barcelony.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Soria";
+        src: url("fonts/soria-font.woff") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Espagna";
+        src: url("fonts/Creme Espana.otf") format("truetype");
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        color: #CECECE;
+        background-color: #CECECE;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    header {
+        background-color: #CECECE;
+        color: black;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    header h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 99px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+        font-family: 'Cinzel Decorative', cursive;
+        color: transparent;
+        -webkit-text-stroke: 2px #111D4A;
+        background: url(photos/back.png);
+        -webkit-background-clip: text;
+        background-position: 0 0;
+        animation: back 20s linear infinite;
+    }
+
+    @keyframes back{
+        100%{
+            background-position: 2000px 0;
+        }
+    }
+
+    .main-ligne {
+        border: none;
+        height: 1px;
+        background-color: #333;
+        margin: 10px 50px;
+    }
+
+    .nav-items {
+        margin-top: 30px;
+        margin-bottom: 170px;
+    }
+
+    .nav-items a {
+        color: black;
+        text-decoration: none;
+        margin-right: 20px;
+        font-family: 'Prompt', sans-serif;
+        position: relative;
+    }
+
+    .nav-items a::after {
+        content: '';
+        width: 0;
+        height: 3px;
+        position: absolute;
+        bottom: -1px;
+        left: 50%;  
+        transform : translateX(-50%);
+        background: black;
+        transition: width 0.3s;
+    }
+
+    .nav-items a:hover::after {
+        width: 50%;
+    }
+
+    .img-first {
+        size: 1000px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transform: scale(1);
+        margin-top: 60px;
+        margin-bottom: 60px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    section {
+         background-image: linear-gradient(to bottom, #CECECE, #F3F3F3);
+        color: black;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    section h1 {
+        font-family: "Espagna", serif;
+        color: #4E3C6E;
+        text-align: center;
+        font-size: 170px;
+        font-weight: 200;
+        margin-bottom: -100px;
+        margin-top: 100px;
+    }
+
+    section h2 {
+        font-family: "Rozha One", serif;
+        font-size: 70px;
+        font-weight: 100;
+        color: #9C73B6;
+        text-align: center;
+        margin-top: -40px;
+    }
+
+    .img-couv {
+        size: 1000px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transform: scale(0.7);
+        margin-top: -100px;
+        transition: transform 0.3s ease;
+        border-radius: 10px;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    .img-couv:hover {
+        transform: scale(0.9);
+    }
+
+    section h3 {
+        color: #4A1138;
+        font-family: "Barcelony", serif;
+        font-size: 70px;
+        margin-top: -80px;
+        text-align: center;
+        font-weight: 500;
+    }
+
+   .box {
+        font-size: 20px;
+        background-color: #E9DCE0;
+        margin-left: 500px;
+        margin-right: 500px;
+        height: 195px;
+        text-align: center;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 4px rgba(91, 12, 66, 0.5);
+    }
+
+    .box ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .box li {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        font-family: "Prompt", sans-serif;
+    }
+
+     .box a {
+        text-decoration: none;
+        color: #5B0C42;
+        position: relative;
+        text-align: center;
+    }
+
+    .box a::after {
+        content: '';
+        width: 0;
+        height: 2px;
+        position: absolute;
+        bottom: -1px;
+        left: 50%;  
+        transform : translateX(-50%);
+        background: #4A1138;
+        transition: width 0.3s;
+    }
+
+    .box a:hover::after {
+        width: 50%;
+    }
+
+    .floating-element {
+        position: relative;
+        animation: floatingAnimation 3s infinite ease-in-out;
+    }
+
+    @keyframes floatingAnimation {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-30%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    .flower {
+        width: 65px;
+        margin-top: 150px;
+        margin-bottom: 100px;
+        position: relative;
+        animation: floatingAnimation 3s infinite ease-in-out;
+        align-items: center;
+    }
+
+    .titre {
+        text-align: center;
+        font-size: 70px;
+        color: #8D51B3;
+        font-family: "Hand", sans-serif;
+        margin-top: 100px;
+        margin-bottom: 10px;
+    }
+
+    .portrait {
+        width: 200px;
+        height: auto;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    section h5 {
+        text-align: center;
+        color: black;
+        font-size: 40px;
+        margin-top: 10px;
+        font-family: "Barcelony", serif;
+        font-weight: 200;
+    }
+
+    section p {
+        size: 30px;
+        text-align: left;
+        margin-right: 300px;
+        margin-left: 300px;
+        line-height: 1.5;
+        font-family: "Space Mono", monospace;
+    }
+
+    section li {
+        size: 30px;
+        text-align: left;
+        margin-right: 300px;
+        margin-left: 300px;
+        line-height: 1.5;
+        font-family: "Space Mono", monospace;
+    }
+
+    section h6 {
+        font-size: 30px;
+        font-family: "Cinzel", serif;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 200px;
+        margin-right: 200px;
+
+    }
+
+    .icon img{
+        width: 65px;
+        margin-top: 200px;
+        margin-bottom: 10px;
+        position: relative;
+        animation: floatingAnimation 3s infinite ease-in-out;
+        align-items: center;
+    }
+
+    .button {
+      display: inline-block;
+      border: 2px solid #000; 
+      padding: 10px 20px; 
+      transition: transform 0.3s; 
+      text-decoration: none; 
+      font-size: 30px;
+      color: black;
+      font-family: "Harmony", serif;
+      margin-top: 50px;
+      margin-bottom: 100px;
+    }
+
+    .button:hover {
+      transform: scale(1.1); 
+    }
+
+</style>
+<body>
+    <header>
+        <h1>BOOST YOUR BAC</h1>
+        <hr class="main-ligne">
+        <div class="nav-items">
+            <a href="squelette.html"><i class="uil uil-estate"></i> Accueil</a>
+            <a href="oeuvre.html"><i class="uil uil-book-open"></i> Oeuvre</a>
+            <a href="mouvement.html"><i class="uil uil-edit-alt"></i> Mouvements</a>
+            <a href="méthodologie.html"><i class="uil uil-setting"></i> Méthodologie</a>
+            <a href="squelette.html#apropos"><i class="uil uil-info-circle"></i> À propos</a>
+            <a href="joinus.html"><i class="uil uil-message"></i> Join us</a>
+        </div>
+    </header>
+    <section>
+        <img class="img-first" src="photos/image/couv-contemp.jpg">
+        <h1>Les contemplations</h1>
+        <h2>-Victor Hugo-</h2>
+        <img class="img-couv" src="photos/contemplations.jpg">
+        <h2>1856</h2>
+        <h3>Mémoire d'une âme</h3>
+
+        <div class="box">
+            <ul>
+                <li><a href="#auteur">Auteur</a></li>
+                <li><a href="#resume">Résumé</a></li>
+                <li><a href="#personnages">Personnages</a></li>
+                <li><a href="#themes">Thèmes</a></li>
+                <li><a href="#fichier">Télécharger</a></li>
+            </ul>
+        </div>
+
+        <img class="flower" src="photos/marguerite.png">
+
+        <div class="texte">
+            <h4 id="auteur" class="titre">Auteur</h4>
+            <img class="portrait" src="photos/portrait/hugo.jpg">
+            <h5>Victor Hugo</h5>
+            <p>Victor Hugo, chef de file du mouvement romantique français, laisse une œuvre abondante qui englobe tous les genres et registres. Il abandonne très tôt ses études pour écrire et revendique la liberté des thèmes et des formes littéraires. Il théorise ainsi le drame romantique, nouveau genre théâtral qui rompt avec les règles du théâtre classique. Sa poésie est lyrique mais touche à tous les sujets : l’amour, la nature, la liberté, la société, la politique. La mort par noyade de sa fille Léopoldine en 1843 est une épreuve dont Victor Hugo ne se remettra jamais complètement. Après la révolution de 1848, Victor Hugo devient député de Paris et s’engage contre la peine de mort et les injustices sociales. Après le coup d’Etat de Napoléon III en 1851, il s’exile à Jersey et devient, avec son recueil Les Châtiments, le chef de file de l’opposition à Napoléon III. C’est durant son exil à Jersey qu’il publie les Contemplations. Victor Hugo rentre en France en 1870 et meurt en 1885. Une foule immense accompagne les funérailles nationales organisées en son honneur. Tu peux lire ici une fiche auteur détaillée sur Victor Hugo (sa vie, son œuvre, ses idées littéraires…)</p>
+
+            <h4 id="resume" class="titre">Resume</h4>
+            <p> Le recueil est organisé en deux parties, « Autrefois » et « Aujourd’hui ». « Autrefois » (1830-1843) Livre I – « Aurore » Ce livre se concentre sur la jeunesse de Victor Hugo, son goût précoce pour l’écriture (« Le poète s’en va dans les champs »), la libération du langage par l’écriture poétique, (« Réponse à un acte d’accusation »). 3/7 Les premiers émois amoureux sont évoqués (« Lise », « Vere novo », « Vieille chanson du jeune temps », « Elle était déchaussée… », « La coccinelle » ), ainsi que le bonheur de contempler la nature (« Le firmament est plein de la vaste clarté », « La vie aux champs »,« Unité »). Livre II – « L’ me en fleur » L’amour est le thème principal de ce deuxième livre : « Tout conjugue le verbe aimer » dit le premier vers du poème « Premier mai ». Victor Hugo évoque les amours de jeunesse (« Hier au soir », « Nous allions au verger », « Mon bras pressait ta taille frêle »), le tourment amoureux (« Tu peux comme il te plaît me faire jeune ou vieux »), la jalousie (« Paroles dans l’ombre »), la puissance mystique de l’amour (« Il fait froid », « Aimons toujours, aimons encore », « Après l’hiver », « Je respire où tu palpites » ). Quelques poèmes sur la fragilité de la vie et de l’amour apportent une touche plus sombre à cet ensemble (« Crépuscule », « Saturne », « Un soir que je regardais le ciel »). Livre III – Les luttes et les rêves C’est dans ce livre que Victor Hugo évoque son combat contre la misère sociale, la guerre, la tyrannie, fléaux engendrés par une société humaine injuste et égoïste. Ce livre préfigure le roman Les Misérables car on y trouve déjà le portrait des miséreux – femmes enfants, ouvriers, prostituées – plongés dans une précarité révoltante. Aujourd’hui (1843-1855) Livre IV – Pauca meae Ce livre est consacré au deuil de Léopoldine, décédée en 1843. Victor explore la douleur et les étapes du deuil, de l’abattement à la révolte, puis à l’acceptation (comme dans « Demain dès l’aube » ) L’évocation de souvenirs de la jeune Léopoldine adoucissent parfois la peine (comme dans « Elle avait pris ce pli…», « Quand nous habitions tous ensemble », « Elle était pâle et pourtant rose », « Ô souvenirs… »).</p>
+
+            <h4 id="personnages" class="titre">Personnages</h4>
+            <ul>
+              <li><strong>Victor Hugo :</strong> Victor Hugo est l'auteur des "Contemplations" et le protagoniste principal de l'œuvre. Il est un écrivain et poète français du XIXe siècle, célèbre pour ses contributions à la littérature romantique. Les "Contemplations" sont considérées comme l'une de ses œuvres majeures, où il explore des thèmes tels que l'amour, la mort, la nature et la condition humaine.</li>
+              <li><strong>Léopoldine Hugo :</strong>Léopoldine Hugo est la fille de Victor Hugo et un personnage clé des "Contemplations". Elle est souvent évoquée dans les poèmes de l'œuvre, notamment dans la section intitulée "A Villequier", où Hugo exprime sa douleur après la tragique disparition de sa fille dans un accident de bateau. Léopoldine représente la figure de l'amour filial et la perte dévastatrice.</li>
+              <li><strong>Adéle Hugo :</strong>Adèle Hugo est la deuxième fille de Victor Hugo et apparaît également dans les "Contemplations". Elle est souvent mentionnée dans les poèmes qui parlent de la vie familiale de Victor Hugo et de son implication politique. Adèle représente le lien familial et l'engagement dans la lutte pour la justice.</li>
+              <li><strong>Juliet Drouet :</strong>Juliette Drouet est la muse et l'amante de Victor Hugo. Leur relation est profondément liée aux "Contemplations", et de nombreux poèmes de l'œuvre lui sont dédiés. Juliette Drouet incarne l'amour passionné et la complicité artistique qui a inspiré Hugo tout au long de sa vie.</li>
+              <li><strong>Autres personnages :</strong>Outre ces personnages principaux, les "Contemplations" comportent également des références à d'autres figures historiques et littéraires de l'époque. Parmi eux, on peut citer Napoléon Bonaparte, Jeanne d'Arc, François-René de Chateaubriand, etc. Ces personnages viennent enrichir l'univers poétique de Victor Hugo et fournissent des perspectives variées sur les thèmes abordés dans l'œuvre.</li>
+            </ul>
+
+            <h4 id="themes" class="titre">Themes</h4>
+            <p>• <strong>La nature :</strong><br>La nature est une véritable source d’inspiration pour le poète. 4/7 Dans les Contemplations, et notamment dans la partie « Autrefois », il s’agit d’une nature calme, sereine, joyeuse, souvent printanière. Hugo explore la beauté du monde minéral, végétal, animal pour en montrer sa pureté et sa poésie comme dans « Les oiseaux ». Même le crépuscule du soir, généralement symbole de mélancolie ou de regret, est porteur d’espoir comme dans « Hier au soir ». Le poète perçoit en effet l’unité de la nature, comme le montre le poème « Unité » dans lequel la « marguerite » se fait le miroir du soleil. </p>
+            <p>• <strong>La religion :</strong><br>Les Contemplations ont aussi un sens mystique : il s’agit de l’itinéraire spirituel de Victor Hugo, qui veut « “contempler Dieu” » comme annoncé dans sa préface. Le poète s’interroge sur le destin humain, le sens de la mort. Il partage ses doutes et son désespoir suite au décès de sa fille. Il trouve la foi et le réconfort dans la nature qui le convainc que tout est ordonné par une intelligence supérieure et animé d’un langage universel. L’espérance retrouvée est particulièrement visible dans « Pauca Meae » où Léopoldine survit à la mort en devenant « ange » ou « étoile ».</p>
+            <p>• <strong>L'amour :</strong><br>L’amour est central dans les Contemplations. Il prend la forme de l’amour de la nature qui ramène le poète à l’amour de Dieu. L’amour, ce sont aussi les amours de jeunesse placées sous le signe de la pureté et de la rêverie et surtout l’amour filial entre Victor Hugo et Léopoldine dont la disparition est une perte irréparable pour le poète.</p>
+            <p>• <strong>Le deuil :</strong><br>La poésie lumineuse de Victor Hugo est assombrie par le deuil de sa fille Léopoldine. La date de ce décès – 1843 – est le pivot du recueil et marque une fracture dans la vie de l’auteur. Dans la partie IV Pauca meae, Victor Hugo explore les étapes de son deuil : le silence, l’abattement, la révolte, le désespoir, l’acceptation. (Voir par exemple « Veni, Vidi, Vixi » ) Le deuil est rendu supportable par l’évocation des souvenirs heureux et de l’harmonie familiale passée comme dans « Elle avait pris ce pli » ou « Elle était pâle et pourtant rose ».</p>
+            <p>• <strong>La misère et la pauvreté :</strong><br>Le livre III des Contemplations semble être une version poétique anticipée des Misérables. On y retrouve en effet les personnages qui peupleront le célèbre roman de Victor Hugo quelques années plus tard. Dans « ? », Victor HUGO, par ce titre inhabituel, met l’accent sur l’attitude d’incrédulité face à la montée des injustices.</p>
+
+
+        </div>
+        <div class="icon"><img class="cloud" src="photos/nuage.png"></div>
+        <a id="fichier" href="https://docs.google.com/document/d/1NTIXiwvgQzrYtRuuojNS9rp-6c6tOd1ddfeFPL7BHkQ/edit?usp=sharing" target="_blank">
+          <div class="button">Télécharger</div></a>
+    </section>
+</body>
+</html>

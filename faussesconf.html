@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Les caractères</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="icon" href="file:///C:/Users/HP/Desktop/autre%20trucs/site%20bis/squelette.html" type="photos/byblogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;500&family=Prompt:ital,wght@0,100;0,200;0,300;0,700;0,800;0,900;1,100;1,200&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rozha+One&display=swap" rel="stylesheet">
+</head>
+<style>
+    @font-face {
+        font-family: "Harmony";
+        src: url("fonts/Harmony.otf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Hand";
+        src: url("fonts/ShadowHand.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Barcelony";
+        src: url("fonts/Barcelony.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Soria";
+        src: url("fonts/soria-font.woff") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Espagna";
+        src: url("fonts/Creme Espana.otf") format("truetype");
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        color: #CECECE;
+        background-color: #CECECE;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    header {
+        background-color: #CECECE;
+        color: black;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    header h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 99px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+        font-family: 'Cinzel Decorative', cursive;
+        color: transparent;
+        -webkit-text-stroke: 2px #111D4A;
+        background: url(photos/back.png);
+        -webkit-background-clip: text;
+        background-position: 0 0;
+        animation: back 20s linear infinite;
+    }
+
+    @keyframes back{
+        100%{
+            background-position: 2000px 0;
+        }
+    }
+
+    .main-ligne {
+        border: none;
+        height: 1px;
+        background-color: #333;
+        margin: 10px 50px;
+    }
+
+    .nav-items {
+        margin-top: 30px;
+        margin-bottom: 170px;
+    }
+
+    .nav-items a {
+        color: black;
+        text-decoration: none;
+        margin-right: 20px;
+        font-family: 'Prompt', sans-serif;
+        position: relative;
+    }
+
+    .nav-items a::after {
+        content: '';
+        width: 0;
+        height: 3px;
+        position: absolute;
+        bottom: -1px;
+        left: 50%;  
+        transform : translateX(-50%);
+        background: black;
+        transition: width 0.3s;
+    }
+
+    .nav-items a:hover::after {
+        width: 50%;
+    }
+
+    .img-first {
+        size: 1000px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transform: scale(1.6);
+        margin-top: 60px;
+        margin-bottom: 60px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    section {
+         background-image: linear-gradient(to bottom, #CECECE, #F3F3F3);
+        color: black;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    section h1 {
+        font-family: "Espagna", serif;
+        color: #205A37;
+        text-align: center;
+        font-size: 130px;
+        font-weight: 200;
+        margin-bottom: -100px;
+        margin-top: 100px;
+    }
+
+    section h2 {
+        font-family: "Rozha One", serif;
+        font-size: 70px;
+        font-weight: 100;
+        color: #58A551;
+        text-align: center;
+        margin-top: -40px;
+    }
+
+    .img-couv {
+        size: 1000px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transform: scale(0.7);
+        margin-top: -100px;
+        transition: transform 0.3s ease;
+        border-radius: 10px;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    .img-couv:hover {
+        transform: scale(0.9);
+    }
+
+    section h3 {
+        color: #237B3E;
+        font-family: "Barcelony", serif;
+        font-size: 70px;
+        margin-top: -80px;
+        text-align: center;
+        font-weight: 500;
+    }
+
+   .box {
+        font-size: 20px;
+        background-color: #D8DFB7;
+        margin-left: 500px;
+        margin-right: 500px;
+        height: 195px;
+        text-align: center;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 4px rgba(46, 138, 66, 0.7);
+    }
+
+    .box ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .box li {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        font-family: "Prompt", sans-serif;
+    }
+
+     .box a {
+        text-decoration: none;
+        color: #237B3E;
+        position: relative;
+        text-align: center;
+    }
+
+    .box a::after {
+        content: '';
+        width: 0;
+        height: 2px;
+        position: absolute;
+        bottom: -1px;
+        left: 50%;  
+        transform : translateX(-50%);
+        background: #237B3E;
+        transition: width 0.3s;
+    }
+
+    .box a:hover::after {
+        width: 50%;
+    }
+
+    .floating-element {
+        position: relative;
+        animation: floatingAnimation 3s infinite ease-in-out;
+    }
+
+    @keyframes floatingAnimation {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-30%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    .flower {
+        width: 65px;
+        margin-top: 150px;
+        margin-bottom: 100px;
+        position: relative;
+        animation: floatingAnimation 3s infinite ease-in-out;
+        align-items: center;
+    }
+
+    .titre {
+        text-align: center;
+        font-size: 70px;
+        color: #237B3E;
+        font-family: "Hand", sans-serif;
+        margin-top: 100px;
+        margin-bottom: 10px;
+    }
+
+    .portrait {
+        width: 200px;
+        height: auto;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    section h5 {
+        text-align: center;
+        color: black;
+        font-size: 40px;
+        margin-top: 10px;
+        font-family: "Barcelony", serif;
+        font-weight: 200;
+    }
+
+    section p {
+        size: 30px;
+        text-align: left;
+        margin-right: 300px;
+        margin-left: 300px;
+        line-height: 1.5;
+        font-family: "Space Mono", monospace;
+    }
+
+    section li {
+        size: 30px;
+        text-align: left;
+        margin-right: 300px;
+        margin-left: 300px;
+        line-height: 1.5;
+        font-family: "Space Mono", monospace;
+    }
+
+    section h6 {
+        font-size: 30px;
+        font-family: "Cinzel", serif;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 200px;
+        margin-right: 200px;
+
+    }
+
+    .icon img{
+        width: 65px;
+        margin-top: 200px;
+        margin-bottom: 10px;
+        position: relative;
+        animation: floatingAnimation 3s infinite ease-in-out;
+        align-items: center;
+    }
+
+    .button {
+      display: inline-block;
+      border: 2px solid #000; 
+      padding: 10px 20px; 
+      transition: transform 0.3s; 
+      text-decoration: none; 
+      font-size: 30px;
+      color: black;
+      font-family: "Harmony", serif;
+      margin-top: 50px;
+      margin-bottom: 100px;
+    }
+
+    .button:hover {
+      transform: scale(1.1); 
+    }
+
+</style>
+<body>
+    <header>
+        <h1>BOOST YOUR BAC</h1>
+        <hr class="main-ligne">
+        <div class="nav-items">
+            <a href="squelette.html"><i class="uil uil-estate"></i> Accueil</a>
+            <a href="oeuvre.html"><i class="uil uil-book-open"></i> Oeuvre</a>
+            <a href="mouvement.html"><i class="uil uil-edit-alt"></i> Mouvements</a>
+            <a href="méthodologie.html"><i class="uil uil-setting"></i> Méthodologie</a>
+            <a href="squelette.html#apropos"><i class="uil uil-info-circle"></i> À propos</a>
+            <a href="joinus.html"><i class="uil uil-message"></i> Join us</a>
+        </div>
+    </header>
+    <section>
+        <img class="img-first" src="photos/image/couv-fossconf.jpg">
+        <h1>Les fausses confidences</h1>
+        <h2>-Marivaux-</h2>
+        <img class="img-couv" src="photos/faussesconf.jpg">
+        <h2>1737</h2>
+        <h3>Théâtre et stratagéme</h3>
+
+        <div class="box">
+            <ul>
+                <li><a href="#auteur">Auteur</a></li>
+                <li><a href="#resume">Résumé</a></li>
+                <li><a href="#personnages">Personnages</a></li>
+                <li><a href="#themes">Thèmes</a></li>
+                <li><a href="#fichier">Télécharger</a></li>
+            </ul>
+        </div>
+
+        <img class="flower" src="photos/marguerite.png">
+
+        <div class="texte">
+            <h4 id="auteur" class="titre">Auteur</h4>
+            <img class="portrait" src="photos/portrait/Marivaux2.jpeg">
+            <h5>Marivaux</h5>
+            <p>Pierre Carlet de Chamblain de Marivaux, né le 4 février 1688 à Paris et mort le 12 février 1763 dans la même ville, est un écrivain français. Marivaux est, avec Beaumarchais, l'un des deux grands dramaturges du siècle des Lumières. Marivaux faisait partie de la moyenne bourgeoisie, il a vécu au tournant de trois règnes: la fin du règne de Louis XIV, la régence de Philippe d'Orléans et le règne de Louis XV. Marivaux entre dans la deuxième querelle des anciens et des modernes du XIIIe siècle. Il était considéré comme un "moderne" à l'époque et il s'opposait à la façon d'enseigner traditionnelle dans les écoles. Il préférait encourager l'audace et la liberté. Marivaux était très influencé par un style de peinture appelé "fêtes galantes", qui exprimait la joie de vivre, les plaisirs de l'amour, les émotions et l'importance de l'apparence. Marivaux cultivait son art de la conversation, son raffinement des moeurs et des usages, en fréquentant des salons précieux, notamment celui de Mme de Tencin, Mme de Lambert et de Mme de Geoffrin, où l’on essaye de faire renaître l’atmosphère spirituelle de l'Hôtel de Rambouillet, salon littéraire qui accueillit les premières précieuses au xviie siècle. Pour améliorer son talent pour les conversations et sa connaissance des bonnes manières, Marivaux fréquentait des salons précieux, lieux de rencontre et d'échange intellectuel, organisés par des femmes influentes de l'aristocratie ou de la haute bourgeoisie française. Parmi ces salons, il y avait celui de Mme de Tencin, Mme de Lambert et Mme de Geoffrin. On essayait d'y recréer l'ambiance intellectuelle et artistique de l'Hôtel de Rambouillet, un salon littéraire célèbre qui avait accueilli les premières femmes écrivaines importantes au XVIIe siècle: les premières précieuses.</p>
+
+            <h4 id="resume" class="titre">Resume</h4>
+            <p> Divisée en trois actes, cette pièce est écrite en prose et explore les thèmes du mensonge, de l’amour et de la manipulation. L’intrigue tourne autour de Dorante, un jeune homme qui cherche à conquérir le cœur d’Araminte, une veuve riche et séduisante. Dorante a un plan astucieux : il se fait engager comme intendant chez Araminte pour se rapprocher d’elle. Avec l’aide de son valet Dubois, il met en place une série de fausses confidences et de stratagèmes pour attirer l’attention d’Araminte. Il écrit des lettres anonymes, utilise des intrigues et des mensonges pour semer la confusion et faire en sorte que les sentiments d’Araminte se dirigent vers lui. Au fur et à mesure que l’intrigue se développe, d’autres personnages entrent en scène et compliquent encore plus la situation. Marton, une servante amoureuse de Dorante, devient sa confidente et participe à ses manigances. Dorimène, une amie d’Araminte, devient également une rivale amoureuse pour Dorante. La pièce met en lumière les jeux de séduction et les enchevêtrements de l’amour et du mensonge. Les personnages s’engagent dans des dialogues habiles et des échanges de lettres pleins de sous-entendus. Les sentiments et les intentions des personnages sont constamment remis en question, créant une atmosphère de mystère et de suspense comique. Finalement, les fausses confidences de Dorante sont révélées, et les personnages doivent faire face aux conséquences de leurs actions. La pièce se termine par des réconciliations, des mariages et une certaine leçon morale sur la sincérité et l’authenticité des relations amoureuses. Marivaux, à la différence de Molière, n’étudie pas l’homme en lui-même, mais l’amour avec ses nuances. Les personnages recourent souvent à des artifices, tels que le déguisement, afin de mieux contrôler les sentiments de leurs partenaires.</p>
+
+            <h4 id="personnages" class="titre">Personnages</h4>
+            <ul>
+              <li><strong>Dorante :</strong> Vle personnage principal de la pièce, Dorante est un jeune homme séduisant et intelligent. Il est amoureux d’Araminte et décide de se faire engager comme son intendant pour se rapprocher d’elle. Dorante est un maître des intrigues et des faux-semblants.</li>
+              <li><strong>Araminte :</strong>une jeune veuve riche et intelligente, Araminte est la cible des fausses confidences de Dorante. Elle est à la fois prudente et curieuse, et se laisse intriguer par les manœuvres de Dorante. Araminte est également courtisée par d’autres personnages, ce qui crée des complications dans la pièce.</li>
+              <li><strong>Monsieur Rémy :</strong>le fidèle serviteur d’Araminte, Monsieur Rémy est un homme sérieux et dévoué. Il est chargé de gérer les affaires d’Araminte et se méfie des intentions de Dorante. Monsieur Rémy est souvent le témoin des manipulations de Dorante, mais il ne révèle pas toujours tout ce qu’il sait.</li>
+              <li><strong>Marton :</strong>une jeune servante chez Araminte, Marton est une femme vive et intelligente. Elle est amoureuse de Dorante et est également la confidente d’Araminte. Marton joue un rôle important dans l’intrigue en transmettant des lettres et en contribuant aux stratagèmes de Dorante.</li>
+              <li><strong>Dubois :</strong>l’ancien valet de Dorante, Dubois est rusé et malin. Il est engagé par Dorante pour l’aider à exécuter ses fausses confidences. Dubois est un maître de la manipulation et de la tromperie, et il joue un rôle clé dans le développement de l’intrigue.</li>
+              <li><strong>Dorimène :</strong>une amie proche d’Araminte, Dorimène est une femme coquette et séduisante. Elle est également courtisée par Dorante, ce qui ajoute une dimension supplémentaire aux fausses confidences et aux rivalités amoureuses.</li>
+              <li><strong>Monsieur Bagoût :</strong>un homme âgé et riche, Monsieur Bagoût est un prétendant d’Araminte. Il est souvent comique dans ses tentatives d’impressionner Araminte et d’évincer les autres prétendants.</li>
+              <li><strong>Comtesse :</strong>une dame de la haute société, la Comtesse est une amie d’Araminte. Elle est souvent présente lors des événements clés de la pièce et apporte une certaine sagesse et une perspective extérieure.</li>
+
+            </ul>
+
+            <h4 id="themes" class="titre">Themes</h4>
+            <p>Les thèmes principaux de la pièce sont le marivaudage, les confidences, le mariage et la figure du valet.</p>
+
+
+        </div>
+        <div class="icon"><img class="cloud" src="photos/nuage.png"></div>
+        <a id="fichier" href="https://docs.google.com/document/d/1XcqwCbeP1O9smdcIK6qNZ-RFpepFdr2h3a6Pcrao1Nk/edit?usp=sharing" target="_blank">
+          <div class="button">Télécharger</div></a>
+    </section>
+</body>
+</html>

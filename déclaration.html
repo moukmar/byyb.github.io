@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gargantua</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="icon" href="file:///C:/Users/HP/Desktop/autre%20trucs/site%20bis/squelette.html" type="photos/byblogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;500&family=Prompt:ital,wght@0,100;0,200;0,300;0,700;0,800;0,900;1,100;1,200&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rozha+One&display=swap" rel="stylesheet">
+</head>
+<style>
+    @font-face {
+        font-family: "Harmony";
+        src: url("fonts/Harmony.otf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Hand";
+        src: url("fonts/ShadowHand.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Barcelony";
+        src: url("fonts/Barcelony.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Soria";
+        src: url("fonts/soria-font.woff") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Espagna";
+        src: url("fonts/Creme Espana.otf") format("truetype");
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        color: #CECECE;
+        background-color: #CECECE;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    header {
+        background-color: #CECECE;
+        color: black;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    header h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 99px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+        font-family: 'Cinzel Decorative', cursive;
+        color: transparent;
+        -webkit-text-stroke: 2px #111D4A;
+        background: url(photos/back.png);
+        -webkit-background-clip: text;
+        background-position: 0 0;
+        animation: back 20s linear infinite;
+    }
+
+    @keyframes back{
+        100%{
+            background-position: 2000px 0;
+        }
+    }
+
+    .main-ligne {
+        border: none;
+        height: 1px;
+        background-color: #333;
+        margin: 10px 50px;
+    }
+
+    .nav-items {
+        margin-top: 30px;
+        margin-bottom: 170px;
+    }
+
+    .nav-items a {
+        color: black;
+        text-decoration: none;
+        margin-right: 20px;
+        font-family: 'Prompt', sans-serif;
+        position: relative;
+    }
+
+    .nav-items a::after {
+        content: '';
+        width: 0;
+        height: 3px;
+        position: absolute;
+        bottom: -1px;
+        left: 50%;  
+        transform : translateX(-50%);
+        background: black;
+        transition: width 0.3s;
+    }
+
+    .nav-items a:hover::after {
+        width: 50%;
+    }
+
+    .img-first {
+        size: 1000px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transform: scale(1);
+        margin-top: 40px;
+        margin-bottom: 40px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    section {
+         background-image: linear-gradient(to bottom, #CECECE, #F3F3F3);
+        color: black;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    section h1 {
+        font-family: "Espagna", serif;
+        color: #1363A0;
+        text-align: center;
+        font-size: 170px;
+        font-weight: 200;
+        margin-bottom: -100px;
+        margin-top: 100px;
+    }
+
+    section h2 {
+        font-family: "Rozha One", serif;
+        font-size: 70px;
+        font-weight: 100;
+        color: #E94D29;
+        text-align: center;
+        margin-top: -40px;
+    }
+
+    .img-couv {
+        size: 1000px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transform: scale(1.5);
+        margin-top: 0px;
+        margin-bottom: 120px;
+        transition: transform 0.3s ease;
+        border-radius: 10px;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    .img-couv:hover {
+        transform: scale(1.7);
+    }
+
+    section h3 {
+        color: #16346C;
+        font-family: "Barcelony", serif;
+        font-size: 70px;
+        margin-top: -80px;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .box {
+        font-size: 20px;
+        background-color: #BFCADF;
+        margin-left: 500px;
+        margin-right: 500px;
+        height: 195px;
+        text-align: center;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 4px rgba(49, 89, 120, 0.5);
+    }
+
+    .box ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .box li {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        font-family: "Prompt", sans-serif;
+    }
+
+    .box a {
+        text-decoration: none;
+        color: #16346C;
+        position: relative;
+        text-align: center;
+    }
+
+    .box a::after {
+        content: '';
+        width: 0;
+        height: 2px;
+        position: absolute;
+        bottom: -1px;
+        left: 50%;  
+        transform : translateX(-50%);
+        background: #16346C;
+        transition: width 0.3s;
+    }
+
+    .box a:hover::after {
+        width: 50%;
+    }
+
+    .floating-element {
+        position: relative;
+        animation: floatingAnimation 3s infinite ease-in-out;
+    }
+
+    @keyframes floatingAnimation {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-30%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    .flower {
+        width: 65px;
+        margin-top: 150px;
+        margin-bottom: 100px;
+        position: relative;
+        animation: floatingAnimation 3s infinite ease-in-out;
+        align-items: center;
+    }
+
+    .titre {
+        text-align: center;
+        font-size: 70px;
+        color: #DC4918;
+        font-family: "Hand", sans-serif;
+        margin-top: 100px;
+        margin-bottom: 10px;
+    }
+
+    .portrait {
+        width: 200px;
+        height: auto;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    section h5 {
+        text-align: center;
+        color: black;
+        font-size: 40px;
+        margin-top: 10px;
+        font-family: "Barcelony", serif;
+        font-weight: 200;
+    }
+
+    section p {
+        size: 30px;
+        text-align: left;
+        margin-right: 300px;
+        margin-left: 300px;
+        line-height: 1.5;
+        font-family: "Space Mono", monospace;
+    }
+
+    section li {
+        size: 30px;
+        text-align: left;
+        margin-right: 300px;
+        margin-left: 300px;
+        line-height: 1.5;
+        font-family: "Space Mono", monospace;
+    }
+
+    section h6 {
+        font-size: 30px;
+        font-family: "Cinzel", serif;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .icon img{
+        width: 65px;
+        margin-top: 200px;
+        margin-bottom: 10px;
+        position: relative;
+        animation: floatingAnimation 3s infinite ease-in-out;
+        align-items: center;
+    }
+
+    .button {
+      display: inline-block;
+      border: 2px solid #000; 
+      padding: 10px 20px; 
+      transition: transform 0.3s; 
+      text-decoration: none; 
+      font-size: 30px;
+      color: black;
+      font-family: "Harmony", serif;
+      margin-top: 50px;
+      margin-bottom: 100px;
+    }
+
+    .button:hover {
+      transform: scale(1.1); 
+    }
+
+</style>
+<body>
+    <header>
+        <h1>BOOST YOUR BAC</h1>
+        <hr class="main-ligne">
+        <div class="nav-items">
+            <a href="squelette.html"><i class="uil uil-estate"></i> Accueil</a>
+            <a href="oeuvre.html"><i class="uil uil-book-open"></i> Oeuvre</a>
+            <a href="mouvement.html"><i class="uil uil-edit-alt"></i> Mouvements</a>
+            <a href="méthodologie.html"><i class="uil uil-setting"></i> Méthodologie</a>
+            <a href="squelette.html#apropos"><i class="uil uil-info-circle"></i> À propos</a>
+            <a href="joinus.html"><i class="uil uil-message"></i> Join us</a>
+        </div>
+    </header>
+    <section>
+        <img class="img-first" src="photos/image/couv-decfem.jpeg">
+        <h1>Déclaration</h1>
+        <h2>-Olympe de Gouges-</h2>
+        <img class="img-couv" src="photos/déclaration.jpg">
+        <h2>1791</h2>
+        <h3>Ecrire et combattre pour l'égalité</h3>
+
+        <div class="box">
+            <ul>
+                <li><a href="#auteur">Auteur</a></li>
+                <li><a href="#resume">Résumé</a></li>
+                <li><a href="#personnages">Personnages</a></li>
+                <li><a href="#themes">Thèmes</a></li>
+                <li><a href="#fichier">Télécharger</a></li>
+            </ul>
+        </div>
+
+        <img class="flower" src="photos/marguerite.png">
+
+        <div class="texte">
+            <h4 id="auteur" class="titre">Auteur</h4>
+            <img class="portrait" src="photos/portrait/degouges.jpg">
+            <h5>Olympe de Gouges</h5>
+            <p>Née en 1748, Marie Gouze grandit en Occitanie dans un milieu modeste. Mariée à l’âge de 16 ans à un homme plus âgé, elle trouve quelques années plus tard, grâce au veuvage, une liberté inattendue. Elle prend alors le nom d’Olympe de Gouges et monte à Paris poursuivre une carrière littéraire en publiant essentiellement des pièces de théâtre. Sensible aux questions progressistes de l’époque, elle milite pour la condition de la femme et l’abolition de l’esclavage. Son écrit le plus célèbre, La déclaration des droits de la femme et de la citoyenne, défend la cause des femmes, oubliées par l’univers masculin de la Révolution française. Elle est guillotinée en 1793 pour un manifeste jugé anti révolutionnaire dans lequel elle dénonçait les crimes de la Terreur.
+</p>
+            <h4 id="resume" class="titre">Resume</h4>
+            <p>La Déclaration des droits de la femme et de la citoyenne est composée de trois parties : un préambule, la déclaration elle-même et un postambule. Le Préambule Dans le Préambule, Olympe de Gouges demande que les femmes soient constituées en Assemblée nationale et que la déclaration rappelle à tous les membres du corps social leur droits et leurs devoirs vis-à-vis d’elles. Ce petit texte introduit les articles qui vont suivre. La Déclaration 3/7 La Déclaration elle-même est composée de 17 articles qui adoptent la même structure syntaxique que ceux de la Déclaration des droits de l’homme et du citoyen de 1789 (mentionnée DDHC ci-après). La Déclaration d’Olympe de Gouges est donc un texte-miroir voire un pastiche de la Déclaration des droits de l’homme et du citoyen. Les droits suivants y sont proclamés : L’égalité des droits de l’homme et de la femme (art 1) La liberté, la propriété, la sûreté et la résistance à l’oppression pour les deux sexes (art.2) La souveraineté qui est la réunion de l’homme et de la femme dans le corps politique (art.3) La protection des droits de la femme par les lois de la nature et de la raison (art. 4 et 5). Le droit pour la femme et l’homme de participer à l’élaboration des lois et de prétendre aux dignités selon leur mérite. (art. 6) L’égalité devant la loi pour les deux sexes, y compris pour les devoirs et les châtiments (art. 7, 8, 9 et 10). La liberté d’expression pour la femme (art. 10 et 11). La garantie des droits de la femme (art. 12) La contribution de la femme à l’impôt et le droit de participer à la distribution des places, des emplois, des dignités et de l’industrie. (art. 13 et 14). Le droit pour la femme de demander à tout agent public des comptes sur son administration (art 15). La participation des femmes à la rédaction de la Constitution (art.16). Le droit à la propriété, « inviolable et sacré » pour les deux sexes (art. 17). Le Postambule Le Postambule est un texte plus rhétorique qui commence par un appel à la lutte pour l’égalité : « “Femme, réveille-toi” ». Olympe de Gouges constate que malgré la Révolution, les femmes sont toujours méprisées et dédaignées. Elle évoque le rôle décisif des femmes dans l’Histoire. Mais une fois leur capital de jeunesse et de beauté disparu, ces dernières perdent leur influence dans la société. C’est pourquoi Olympe de Gouges propose de sécuriser leur situation juridique par le « “partage des fortunes entre les hommes et les femmes, et de l’administration publique” ». Olympe de Gouges s’insurge également contre l’institution du mariage, « “tombeau de la confiance et de l’amour ”». Elle souhaite préparer l’émancipation de la femme par l’éducation et les « conventions conjugales » qui transformeraient les relations conjugales 4/7 en relations contractuelles.
+</p>
+            <h4 id="personnages" class="titre">Personnages</h4>
+             <p> Les personnages, ou plutot, le personnage prominent (s'il peut être considéré comme tel) est la femme citoyenne quoiqu'elle existe plus en tant que concept ou qu'idée que personnage fictionnel ou nom quelconque.</p>
+            
+
+
+            <h4 id="themes" class="titre">Themes</h4>
+            <h6>L’égalité :</h6>
+            <p>
+            • <strong>L'égalité naturelle :</strong><br>
+            Olympe de Gouges soutient que l'égalité entre les femmes et les hommes est intrinsèquement inscrite dans la nature, ce qui lui confère un caractère inaliénable. Dans l'article 5, elle fait référence aux "lois de la nature et de la raison", une mention absente de la Déclaration des Droits de l'Homme et du Citoyen (DDHC). Selon elle, les propriétés sont considérées comme un "véritable patrimoine de la nature" à partager entre hommes et femmes (article 17). Contrairement à la croyance répandue au XVIIIe siècle, qui soutenait que la nature créait des différences entre les sexes basées sur des critères tels que la force physique, Olympe de Gouges affirme que la nature est placée sous l'égide d'une autorité rationnelle et juste, "l'Être suprême" (préambule), qui valorise l'égalité entre les femmes et les hommes.</p>
+
+            <h6>La justice :</h6>
+            <p> • <strong>La justice distributive :</strong><br>
+            La Déclaration des Droits de la Femme et de la Citoyenne est avant tout un texte juridique dont l'objet principal est la justice. Olympe de Gouges en a une conception distributive, c'est-à-dire qu'il s'agit de répartir les biens, les dignités, les emplois et les récompenses en fonction de la valeur et du mérite de chacun (article 6). Selon elle, "toutes les citoyennes et tous les citoyens, étant égaux à ses yeux, doivent être également admissibles à toutes les dignités, places et emplois publics, selon leurs capacités, et sans autres distinctions que celles de leurs vertus et de leurs talents". Elle insiste également sur le principe de responsabilité, indissociable de la justice. Elle interprète ainsi les articles 7, 8, 9 et 10 de la DDHC pour affirmer que la loi doit s'appliquer avec la même rigueur aux femmes et aux hommes. Olympe de Gouges pousse cette logique jusqu'à revendiquer le "droit" pour une femme d'être condamnée à l'échafaud, affirmant que "nul ne doit être inquiété pour ses opinions mêmes fondamentales, la femme a le droit de monter sur l'échafaud" (article 10).</p>
+
+            <h6>Les libertés politiques pour les femmes :</h6>
+            <p> Si Olympe de Gouges revendique le droit des femmes à l'échafaud, c'est pour mieux justifier leur droit de "monter à la tribune". Elle met en valeur le rôle politique des femmes et réclame dans l'article 10 la liberté d'expression pour tous. Elle souhaite également que les femmes soient intégrées à l'administration et occupent des postes publics importants (article 13), et qu'elles jouent un rôle décisionnaire dans la répartition de l'impôt, symbole d'appartenance à la nation. L'auteure va plus loin dans l'article 16 en défendant le rôle actif des femmes dans la rédaction de la Constitution. En tant que partie intégrante de la nation, les femmes devraient pouvoir assumer tous les rôles politiques et occuper tous les échelons des emplois publics.</p>
+
+            <h6>La Révolution :</h6>
+            <p> Pour Olympe de Gouges, il est nécessaire de mener une "Révolution dans la Révolution". Sa réécriture de la Déclaration des Droits de l'Homme et du Citoyen de 1789 a une haute valeur symbolique : elle démontre que la Révolution est incomplète et ne réalise pas l'égalité des droits qu'elle était censée promouvoir.</p>
+
+            <h6>Le mariage :</h6>
+            <p> Dans le postambule, Olympe de Gouges affirme que "le mariage est le tombeau de la confiance et de l'amour". Elle souhaite remplacer ce sacrement religieux par des "conventions conjugales" afin que les relations entre époux soient fondées sur un contrat, une sorte de pacte civil qui accorde à la femme une place digne au sein de son foyer et de la société.</p>
+
+        </div>
+        <div class="icon"><img class="cloud" src="photos/nuage.png"></div>
+        <a id="fichier" href="https://docs.google.com/document/d/1NTIXiwvgQzrYtRuuojNS9rp-6c6tOd1ddfeFPL7BHkQ/edit?usp=sharing" target="_blank">
+          <div class="button">Télécharger</div></a>
+    </section>
+</body>
+</html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Les caractères</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="icon" href="file:///C:/Users/HP/Desktop/autre%20trucs/site%20bis/squelette.html" type="photos/byblogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;500&family=Prompt:ital,wght@0,100;0,200;0,300;0,700;0,800;0,900;1,100;1,200&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rozha+One&display=swap" rel="stylesheet">
+</head>
+<style>
+    @font-face {
+        font-family: "Harmony";
+        src: url("fonts/Harmony.otf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Hand";
+        src: url("fonts/ShadowHand.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Barcelony";
+        src: url("fonts/Barcelony.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Soria";
+        src: url("fonts/soria-font.woff") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Espagna";
+        src: url("fonts/Creme Espana.otf") format("truetype");
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        color: #CECECE;
+        background-color: #CECECE;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    header {
+        background-color: #CECECE;
+        color: black;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    header h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 99px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+        font-family: 'Cinzel Decorative', cursive;
+        color: transparent;
+        -webkit-text-stroke: 2px #111D4A;
+        background: url(photos/back.png);
+        -webkit-background-clip: text;
+        background-position: 0 0;
+        animation: back 20s linear infinite;
+    }
+
+    @keyframes back{
+        100%{
+            background-position: 2000px 0;
+        }
+    }
+
+    .main-ligne {
+        border: none;
+        height: 1px;
+        background-color: #333;
+        margin: 10px 50px;
+    }
+
+    .nav-items {
+        margin-top: 30px;
+        margin-bottom: 170px;
+    }
+
+    .nav-items a {
+        color: black;
+        text-decoration: none;
+        margin-right: 20px;
+        font-family: 'Prompt', sans-serif;
+        position: relative;
+    }
+
+    .nav-items a::after {
+        content: '';
+        width: 0;
+        height: 3px;
+        position: absolute;
+        bottom: -1px;
+        left: 50%;  
+        transform : translateX(-50%);
+        background: black;
+        transition: width 0.3s;
+    }
+
+    .nav-items a:hover::after {
+        width: 50%;
+    }
+
+    .img-first {
+        size: 1000px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transform: scale(1.7);
+        margin-top: 100px;
+        margin-bottom: 200px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    section {
+         background-image: linear-gradient(to bottom, #CECECE, #F3F3F3);
+        color: black;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    section h1 {
+        font-family: "Espagna", serif;
+        color: #D54626;
+        text-align: center;
+        font-size: 170px;
+        font-weight: 200;
+        margin-bottom: -100px;
+        margin-top: 100px;
+    }
+
+    section h2 {
+        font-family: "Rozha One", serif;
+        font-size: 70px;
+        font-weight: 100;
+        color: #F36A38;
+        text-align: center;
+        margin-top: -40px;
+    }
+
+    .img-couv {
+        size: 1000px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transform: scale(0.7);
+        margin-top: -100px;
+        transition: transform 0.3s ease;
+        border-radius: 10px;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    .img-couv:hover {
+        transform: scale(0.9);
+    }
+
+    section h3 {
+        color: #2F6C91;
+        font-family: "Barcelony", serif;
+        font-size: 70px;
+        margin-top: -80px;
+        text-align: center;
+        font-weight: 500;
+    }
+
+   .box {
+        font-size: 20px;
+        background-color: #C2DCEC;
+        margin-left: 500px;
+        margin-right: 500px;
+        height: 195px;
+        text-align: center;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 4px rgba(30, 95, 135, 0.9);
+    }
+
+    .box ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .box li {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        font-family: "Prompt", sans-serif;
+    }
+
+    .box a {
+        text-decoration: none;
+        color: #2F6C91;
+        position: relative;
+        text-align: center;
+    }
+
+    .box a::after {
+        content: '';
+        width: 0;
+        height: 2px;
+        position: absolute;
+        bottom: -1px;
+        left: 50%;  
+        transform : translateX(-50%);
+        background: #2F6C91;
+        transition: width 0.3s;
+    }
+
+    .box a:hover::after {
+        width: 50%;
+    }
+
+    .floating-element {
+        position: relative;
+        animation: floatingAnimation 3s infinite ease-in-out;
+    }
+
+    @keyframes floatingAnimation {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-30%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    .flower {
+        width: 65px;
+        margin-top: 150px;
+        margin-bottom: 100px;
+        position: relative;
+        animation: floatingAnimation 3s infinite ease-in-out;
+        align-items: center;
+    }
+
+    .titre {
+        text-align: center;
+        font-size: 70px;
+        color: #EB5F2C;
+        font-family: "Hand", sans-serif;
+        margin-top: 100px;
+        margin-bottom: 10px;
+    }
+
+    .portrait {
+        width: 200px;
+        height: auto;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    section h5 {
+        text-align: center;
+        color: black;
+        font-size: 40px;
+        margin-top: 10px;
+        font-family: "Barcelony", serif;
+        font-weight: 200;
+    }
+
+    section p {
+        size: 30px;
+        text-align: left;
+        margin-right: 300px;
+        margin-left: 300px;
+        line-height: 1.5;
+        font-family: "Space Mono", monospace;
+    }
+
+    section li {
+        size: 30px;
+        text-align: left;
+        margin-right: 300px;
+        margin-left: 300px;
+        line-height: 1.5;
+        font-family: "Space Mono", monospace;
+    }
+
+    section h6 {
+        font-size: 30px;
+        font-family: "Cinzel", serif;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 200px;
+        margin-right: 200px;
+
+    }
+
+    .icon img{
+        width: 65px;
+        margin-top: 200px;
+        margin-bottom: 10px;
+        position: relative;
+        animation: floatingAnimation 3s infinite ease-in-out;
+        align-items: center;
+    }
+
+    .button {
+      display: inline-block;
+      border: 2px solid #000; 
+      padding: 10px 20px; 
+      transition: transform 0.3s; 
+      text-decoration: none; 
+      font-size: 30px;
+      color: black;
+      font-family: "Harmony", serif;
+      margin-top: 50px;
+      margin-bottom: 100px;
+    }
+
+    .button:hover {
+      transform: scale(1.1); 
+    }
+
+</style>
+<body>
+    <header>
+        <h1>BOOST YOUR BAC</h1>
+        <hr class="main-ligne">
+        <div class="nav-items">
+            <a href="squelette.html"><i class="uil uil-estate"></i> Accueil</a>
+            <a href="oeuvre.html"><i class="uil uil-book-open"></i> Oeuvre</a>
+            <a href="mouvement.html"><i class="uil uil-edit-alt"></i> Mouvements</a>
+            <a href="méthodologie.html"><i class="uil uil-setting"></i> Méthodologie</a>
+            <a href="squelette.html#apropos"><i class="uil uil-info-circle"></i> À propos</a>
+            <a href="joinus.html"><i class="uil uil-message"></i> Join us</a>
+        </div>
+    </header>
+    <section>
+        <img class="img-first" src="photos/image/couv-alco.jpg">
+        <h1>Alcools</h1>
+        <h2>-Apollinaire-</h2>
+        <img class="img-couv" src="photos/alcools.jpg">
+        <h2>1913</h2>
+        <h3>Modernité poétique</h3>
+
+        <div class="box">
+            <ul>
+                <li><a href="#auteur">Auteur</a></li>
+                <li><a href="#resume">Résumé</a></li>
+                <li><a href="#personnages">Personnages</a></li>
+                <li><a href="#themes">Thèmes</a></li>
+                <li><a href="#fichier">Télécharger</a></li>
+            </ul>
+        </div>
+
+        <img class="flower" src="photos/marguerite.png">
+
+        <div class="texte">
+            <h4 id="auteur" class="titre">Auteur</h4>
+            <img class="portrait" src="photos/portrait/apollinaire.jpg">
+            <h5>Apollinaire</h5>
+            <p>Guillaume Apollinaire (Wilhelm de Kostrowitzky) est né à Rome d'un officier italien et d'une française originaire de la noblesse polonaise. Sa mère s'installe à Monaco en 1885 et il suit des études au lycée de Monaco, puis de Nice. En 1899, sa mère s'établit à Paris où il travaille comme employé de banque pour subvenir à ses besoins et compose ses premiers poèmes. En 1901, il part comme précepteur en Allemagne où il découvre les légendes et les paysages rhénans. A son retour à Paris en 1902, il publie l'Hérésiarque qu'il signe pour la première fois Guillaume Apollinaire. Il fréquente les milieux artistiques et devient l'ami d'artistes comme le Douanier Rousseau, Maurice de Vlaminck et Pablo Picasso qui lui fait connaître en 1907 le peintre Marie Laurencin avec laquelle il a une liaison passionnée jusqu'en 1912. Guillaume Apollinaire exerce les activités de journaliste, poète, critique d'art et conférencier. Il obtient son premier succès en 1913 en publiant Alcools qui rassemble tous ses poèmes depuis 1898. Il défend la même année la peinture contemporaine en publiant "Peintres cubistes, méditations esthétiques". En 1914, il s'engage comme artilleur dans l'armée française. Blessé à la tête en 1916, il doit être trépané et suit une longue convalescence. Guillaume Apollinaire meurt de la grippe espagnole, deux jours avant l'Armistice, le 9 novembre 1918 après avoir publié cette année-là Calligrammes, poèmes en forme de dessins et non soumis aux vers et aux rimes, dont il est l'inventeur. Il est enterré au cimetière du Père Lachaise, à Paris. Comme critique d'art, Guillaume Apollinaire a collaboré à plusieurs revues comme la Revue blanche, la Plume, le Mercure de France où il fait découvrir les avant-gardes de son époque : l'art naïf, l'art nègre, le fauvisme, le cubisme. Il est considéré comme un précurseur du surréalisme dont il a créé le nom. Pour lui, la création n'est fondée sur aucune théorie, mais doit venir de l'imagination et l'intuition et se rapprocher le plus possible de la vie, de la nature.
+</p>
+
+            <h4 id="resume" class="titre">Resume</h4>
+            <p> Alcools est un recueil pluriel, polyphonique, qui explore de nombreux aspects de la poésie, allant de l'élégie au vers libre, mélangeant le quotidien aux paysages rhénans dans une poésie qui se veut expérimentale, alliant un travail sur la forme et sur l'esthétique à un hermétisme et un art du choc. Alcools montre le poète déchiré par ses ruptures amoureuses, ruptures qui résonnent au travers de poèmes tels que Mai, Les Colchiques et, surtout, La Chanson du mal-aimé. Au sein de ses poèmes, Apollinaire abolit la temporalité interne classique mise en vigueur par Ronsard : le passé, le présent, le futur se mêlent en un seul et même univers de vin et d'ivresse. Le poète distille aussi l'espace, en mettant en scène l'univers de son enfance. Il modifie la perception poétique classique du temps et de l'espace : La Chanson du mal-aimé, Zone. Il se distingue comme le dieu poète en établissant une cosmogonie personnelle. Il réécrit les mythes fondateurs avec Orphée. Il se réclame d'Apollon. Mais il réinvente aussi la forme poétique dans son style : il détruit la conception classique syntaxique de Ronsard. Il est le précurseur du surréalisme et consacre une nouvelle poésie d'ivresse et de mythes. C'est après avoir assisté à une lecture par Blaise Cendrars de sa future publication, La Prose du Transsibérien et de la petite Jehanne de France, qu'Apollinaire aurait décidé de transformer à son tour son futur recueil. Il y plaça Zone en ouverture, ce qui lui donna valeur de manifeste, et supprima toute trace de ponctuation, s'inspirant de l'innovation de Cendrars. Alcools ayant été publié avant la Prose du Transsibérien, on attribue souvent à tort la primeur de la suppression de la ponctuation à Apollinaire. Selon lui, en poésie, le rythme du vers et de la respiration suffisent. Au-delà de cette considération, cette suppression lui permit de faire naître des images inédites en rapprochant certains termes comme par accident. On pense par exemple au vers de Zone : « Ils croient en Dieu ils prient les femmes allaitent des enfants » où, dans une première lecture, à cause de l'utilisation transitive du verbe « croire », l'absence de ponctuation conduit à lire le verbe « prier » comme étant lui aussi transitif, « les femmes » apparaissant alors comme complément d'objet direct du verbe. Ce procédé crée également des ambiguïtés de sens, enrichissant les lectures possibles.</p>
+
+            <h4 id="personnages" class="titre">Personnages</h4>
+            <ul>
+              <li><strong>Le poète</strong> : Le « mal-aimé » symbolise la figure du poète. ...</li>
+              <li><strong>Les femmes aimées</strong> : Annie Playden et Marie Laurencin.</li>
+              <li><strong>Les dieux</strong> :Ils se dégradent au fur et à mesure des strophes. ...</li>
+              <li><strong>Paris</strong> :Ville divinisée sous la Révolution par le biais de ses sacrifices</li>
+            </ul>
+
+            <h4 id="themes" class="titre">Themes</h4>
+            <p>• <strong>La modernité :</strong><br> Apollinaire s’interroge sur la pertinence de la poésie après la Première Guerre mondiale, période où tous les codes avaient changé et les repères avaient disparu. C’est ainsi qu’il choisit d’écrire en vers libres et décide d’explorer de nouveaux thèmes. Il célèbre la ville industrielle et les innovations de l’aviation et de l’automobile. En choisissant d’écrire en vers libres, il invente un nouveau mode d’expression. Avec ses calligrammes, il invente un art à part entière, à cheval entre la poésie et le dessin. C’est d’ailleurs Apollinaire qui invente le mot Calligramme, un amalgame du mot calligraphie et du mot idéogramme.</p>
+            <p>• <strong>La guerre :</strong><br> la guerre a eu un impact significatif sur le poète, qui transparaît davantage dans le recueil de poèmes intitulé Poèmes à Lou. L’amour : Les Poèmes à Lou célèbrent l’amour de la femme. Dans « La chanson du mal-aimé » et “Le Pont Mirabeau”, le poète évoque son amour malheureux et chante son désespoir de l’amour perdu.</p>
+
+            
+
+
+        </div>
+        <div class="icon"><img class="cloud" src="photos/nuage.png"></div>
+        <a id="fichier" href="https://docs.google.com/document/d/1NTIXiwvgQzrYtRuuojNS9rp-6c6tOd1ddfeFPL7BHkQ/edit?usp=sharing" target="_blank">
+          <div class="button">Télécharger</div></a>
+    </section>
+</body>
+</html>

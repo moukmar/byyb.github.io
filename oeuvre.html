@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Oeuvre</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="icon" href="file:///C:/Users/HP/Desktop/autre%20trucs/site%20bis/squelette.html" type="photos/byblogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;500&family=Prompt:ital,wght@0,100;0,200;0,300;0,700;0,800;0,900;1,100;1,200&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rozha+One&display=swap" rel="stylesheet">
+</head>
+<style>
+    @font-face {
+        font-family: "Harmony";
+        src: url("fonts/Harmony.otf") format("truetype");
+        font-family: "Hand";
+        src: url("fonts/ShadowHand.ttf") format("truetype");
+        font-family: "Barcelony";
+        src: url("fonts/Barcelony.ttf");
+        }
+
+    body {
+        margin: 0;
+        padding: 0;
+        color: #CECECE;
+        background-color: #CECECE;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    header {
+        background-color: #CECECE;
+        color: black;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    header h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 99px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+        font-family: 'Cinzel Decorative', cursive;
+        color: transparent;
+        -webkit-text-stroke: 2px #111D4A;
+        background: url(photos/back.png);
+        -webkit-background-clip: text;
+        background-position: 0 0;
+        animation: back 20s linear infinite;
+    }
+
+    @keyframes back{
+        100%{
+            background-position: 2000px 0;
+        }
+    }
+
+    .main-ligne {
+        border: none;
+        height: 1px;
+        background-color: #333;
+        margin: 10px 50px;
+    }
+
+    .nav-items {
+        margin-top: 30px;
+        margin-bottom: 170px;
+    }
+
+    .nav-items a {
+        color: black;
+        text-decoration: none;
+        margin-right: 20px;
+        font-family: 'Prompt', sans-serif;
+        position: relative;
+    }
+
+    .nav-items a::after {
+        content: '';
+        width: 0;
+        height: 3px;
+        position: absolute;
+        bottom: -1px;
+        left: 50%;  
+        transform : translateX(-50%);
+        background: black;
+        transition: width 0.3s;
+    }
+
+    .nav-items a:hover::after {
+        width: 50%;
+    }
+
+
+    section {
+        text-align: center;
+    }
+
+    h2 {
+        color: #111222;
+        font-family: "Soria", serif;
+        font-size: 100px;
+        font-weight: 100;
+        margin-bottom: 0em;
+    }
+
+    h3 {
+        margin-top: 0em;
+        color: #111D4A;
+        font-size: 30px;
+    }
+
+    h4 {
+        margin-top: 60px;
+        color: black;
+        font-size: 20px;
+        font-family: "Prompt", sans-serif;
+        font-weight: 200;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .oeuvres {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        max-width: 800px;
+        margin: 0 auto;
+        flex: 1;
+        display: flex;
+        justify-content: center
+    }
+
+    .oeuvres div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+    }
+
+    .oeuvres img {
+        width: 300px;
+        height: auto;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    .oeuvres img:hover {
+        transform: scale(1.1);
+    }
+
+
+    .oeuvres div:hover h5 {
+        transform: scale(1.2);
+    }
+
+    .oeuvres h5 {
+        color: #16697A;
+        font-family: "Rozha One", serif;
+        font-size: 30px;
+        margin-top: 80px;
+        margin: 0px;
+        position: relative;
+        font-weight: 500;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .oeuvres h6 {
+        color: #C1292E;
+        margin-top: 0px;
+        font-size: 20px;
+        font-family: "Raleway", serif;
+        font-weight: 500;
+    }
+
+    .floating-element {
+        position: relative;
+        animation: floatingAnimation 3s infinite ease-in-out;
+    }
+
+    @keyframes floatingAnimation {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-30%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    .soleil {
+        width: 65px;
+        margin-top: 100px;
+        margin-bottom: 80px;
+        position: relative;
+        animation: floatingAnimation 3s infinite ease-in-out;
+    }
+
+    .plante {
+        width: 65px;
+        margin-top: 100px;
+        margin-bottom: 80px;
+        position: relative;
+        animation: floatingAnimation 3s infinite ease-in-out;
+    }
+
+    .fleur {
+        width: 65px;
+        margin-top: 100px;
+        margin-bottom: 80px;
+        position: relative;
+        animation: floatingAnimation 3s infinite ease-in-out;
+    }
+
+    .mars {
+        width: 65px;
+        margin-top: 100px;
+        margin-bottom: 150px;
+        position: relative;
+        animation: floatingAnimation 3s infinite ease-in-out;
+    }
+
+    .oeuvre11 h5 {
+        color: #0E391B;
+    }
+
+    .oeuvre11 h6 {
+        color: #7A4321;
+    }
+
+    .oeuvre21 h5 {
+        color: #4E0606;
+    }
+
+    .oeuvre21 h6 {
+        color: #932700;
+    }
+
+    .oeuvre31 h5 {
+        color: #213C7A;
+    }
+
+    .oeuvre31 h6 {
+        color: #E4572E;
+    }
+
+
+    .oeuvre12 h5 {
+        color: #0E391B;
+    }
+
+    .oeuvre12 h6 {
+        color: #7A4321;
+    }
+
+    .oeuvre22 h5 {
+        color: #4E0606;
+    }
+
+    .oeuvre22 h6 {
+        color: #932700;
+    }
+
+    .oeuvre32 h5 {
+        color: #213C7A;
+    }
+
+    .oeuvre32 h6 {
+        color: #D64048;
+    }
+
+
+    .oeuvre13 h5 {
+        color: #0E391B;
+    }
+
+    .oeuvre13 h6 {
+        color: #7A4321;
+    }
+
+    .oeuvre23 h5 {
+        color: #4E0606;
+    }
+
+    .oeuvre23 h6 {
+        color: #932700;
+    }
+
+    .oeuvre33 h5 {
+        color: #525B3D;
+    }
+
+    .oeuvre33 h6 {
+        color: #650D0D;
+    }
+
+    .oeuvre14 h5 {
+        color: #650D3F;
+    }
+
+    .oeuvre14 h6 {
+        color: #2E8A76;
+    }
+
+    .oeuvre24 h5 {
+        color: #8A0000;
+    }
+
+    .oeuvre24 h6 {
+        color: #0F4C2F;
+    }
+
+    .oeuvre34 h5 {
+        color: #033E40;
+    }
+
+    .oeuvre34 h6 {
+        color: #4A3012;
+    }
+
+    footer {
+            margin-top: 300px;
+            background-color: black;
+        }
+        
+        .piedContenu {
+            width: 100%;
+            padding: 70px 0px 20px;
+        }
+
+        .app {
+            display: flex;
+            justify-content: center;
+        }
+
+        .app a {
+            text-decoration: none;
+            padding: 10px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%;
+        }
+
+        .app a i {
+            font-size: 2em;
+            color: black;
+            opacity: 0.9
+        }
+
+        .app a:hover{
+            background-color: black;
+            transition: 0.5s;
+        }
+
+        .app a:hover i{
+            background-color: white;
+            transition: 0.5s;
+        }
+
+        .nav {
+            margin: 30px 0;
+        }
+
+        .nav ul {
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .nav ul li a {
+            color: white;
+            margin: 20px;
+            text-decoration: none;
+            font-size: 1.3em;
+            opacity: 0.7;
+            transition: 0.5s;
+            font-family: "Prompt", sans-serif;
+        }
+
+        .nav ul li a:hover {
+            opacity: 1;
+        }
+
+        .bottom {
+            background-color: black;
+            padding: 0px;
+            text-align: center;
+        }
+
+        .bottom p {
+            color: white;
+        }
+    
+</style>
+<body>
+    <header>
+        <h1>BOOST YOUR BAC</h1>
+        <hr class="main-ligne">
+        <div class="nav-items">
+            <a href="squelette.html"><i class="uil uil-estate"></i> Accueil</a>
+            <a href="oeuvre.html"><i class="uil uil-book-open"></i> Oeuvre</a>
+            <a href="mouvement.html"><i class="uil uil-edit-alt"></i> Mouvements</a>
+            <a href="méthodologie.html"><i class="uil uil-setting"></i> Méthodologie</a>
+            <a href="squelette.html#apropos"><i class="uil uil-info-circle"></i> À propos</a>
+            <a href="#joinus"><i class="uil uil-message"></i> Join us</a>
+        </div>
+    </header>
+        <section>
+        <h2>La littérature d'idées</h2>
+        <h3>du XVIe siècle au XVIIIe siècle</h3>
+        <h4>Choisissez parmis les trois oeuvres au programme celle qui vous intéresse :</h4>
+
+        <div class="second">
+        <div class="oeuvres">
+            <div class="oeuvre11">
+                <a href="gargantua.html"><img class="couv-1" src="photos/gargantua.jpg">
+                <h5>Gargantua</h5>
+                <h6>François Rabelais</h6></a>
+            </div>
+            <div class="oeuvre21">
+                <a href="caractères.html"><img class="couv-1" src="photos/caractères.jpg">
+                <h5>Les caractères</h5>
+                <h6>La Bruyère</h6></a>
+            </div>
+            <div class="oeuvre31">
+                <a href="déclaration.html"><img class="couv-3" src="photos/déclaration.jpg">
+                <h5>Déclaration</h5>
+                <h6>Olympe de Gouges</h6></a>
+            </div>
+        </div>
+        </div>
+        <img class="soleil" src="photos/sunset.png">
+
+        <h2>La poésie</h2>
+        <h3>du XIXe siècle au XXIe siècle</h3>
+        <h4>Choisissez parmis les trois oeuvres au programme celle qui vous intéresse :</h4>
+
+        <div class="second">
+        <div class="oeuvres">
+            <div class="oeuvre12">
+                <a href="fleursdumal.html"><img class="couv-1" src="photos/fleursdumal.jpeg">
+                <h5>Les Fleurs du Mal</h5>
+                <h6>Charles Baudelaire</h6></a>
+            </div>
+            <div class="oeuvre22">
+                <a href="alcools.html"><img class="couv-1" src="photos/alcools.jpg">
+                <h5>ALcools</h5>
+                <h6>Guillaume Apollinaire</h6></a>
+            </div>
+            <div class="oeuvre32">
+                <a href="contemplations.html"><img class="couv-3" src="photos/contemplations.jpg">
+                <h5>Les Contemplations</h5>
+                <h6>Victor Hugo</h6></a>
+            </div>
+        </div>
+        </div>
+        <img class="plante" src="photos/plante.png">
+
+        <h2>Le théâtre</h2>
+        <h3>du XVIIe siècle au XXIe siècle</h3>
+        <h4>Choisissez parmis les trois oeuvres au programme celle qui vous intéresse :</h4>
+
+        <div class="second">
+        <div class="oeuvres">
+            <div class="oeuvre13">
+                <a href="faussesconf.html"><img class="couv-1" src="photos/faussesconf.jpg">
+                <h5>Fausses Confidences</h5>
+                <h6>Marivaux</h6></a>
+            </div>
+            <div class="oeuvre23">
+                <a href="justelafindumonde.html"><img class="couv-1" src="photos/findumonde.jpg">
+                <h5>Juste La fn du monde</h5>
+                <h6>Jean-Luc Lagarce</h6></a>
+            </div>
+            <div class="oeuvre33">
+                <a href="maladeimaginaire.html"><img class="couv-3" src="photos/malade-imaginaire.jpg">
+                <h5>Le Malade imaginaire</h5>
+                <h6>Molière</h6></a>
+            </div>
+        </div>
+        </div>
+        <img class="fleur" src="photos/fleur.png">
+
+        <h2>Le roman et le récit</h2>
+        <h3>du Moyen Age au XXIe siècle</h3>
+        <h4>Choisissez parmis les trois oeuvres au programme celle qui vous intéresse :</h4>
+
+        <div class="second">
+        <div class="oeuvres">
+            <div class="oeuvre14">
+                <a href="manonlescaut.html"><img class="couv-1" src="photos/manonlescaut.jpg">
+                <h5>Manon Lescaut</h5>
+                <h6>Abbé Prévost</h6></a>
+            </div>
+            <div class="oeuvre24">
+                <a href="sido.html"><img class="couv-1" src="photos/sido.jpg">
+                <h5>Sido</h5>
+                <h6>Colette</h6></a>
+            </div>
+            <div class="oeuvre34">
+                <a href="peaudechagrin.html"><img class="couv-3" src="photos/peaudechagrin.jpg">
+                <h5>La Peau de chagrin</h5>
+                <h6>Balzac</h6></a>
+            </div>
+        </div>
+        </div>
+        <img class="mars" src="photos/mars.png">
+    </section>
+
+    <footer>
+        <div id="joinus" class="piedContenu">
+            <div class='app'>
+                <a href=""><i class="uil uil-facebook"></i></a>
+                <a href=""><i class="uil uil-twitter"></i></a>
+                <a href=""><i class="uil uil-instagram"></i></a>
+                <a href=""><i class="uil uil-whatsapp"></i></a>
+                <a href=""><i class="uil uil-youtube"></i></i></a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="">Accueil</a></li>
+                    <li><a href="">A propos</a></li>
+                    <li><a href="">Notre équipe</a></li>
+                    <li><a href="">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <p>Copyright @2023; Designed by Maryam Moukdar and Co</p>   
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

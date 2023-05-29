@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mouvements</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="icon" href="file:///C:/Users/HP/Desktop/autre%20trucs/site%20bis/squelette.html" type="photos/byblogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;500&family=Prompt:ital,wght@0,100;0,200;0,300;0,700;0,800;0,900;1,100;1,200&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rozha+One&display=swap" rel="stylesheet">
+</head>
+<style>
+    @font-face {
+        font-family: "Harmony";
+        src: url("fonts/Harmony.otf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Hand";
+        src: url("fonts/ShadowHand.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Barcelony";
+        src: url("fonts/Barcelony.ttf");
+    }
+
+    @font-face {
+        font-family: "Espagna";
+        src: url("fonts/Creme Espana.otf");
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        color: #CECECE;
+        background-color: #CECECE;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    header {
+        background-color: #CECECE;
+        color: black;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    header h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 99px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+        font-family: 'Cinzel Decorative', cursive;
+        color: transparent;
+        -webkit-text-stroke: 2px #111D4A;
+        background: url(photos/back.png);
+        -webkit-background-clip: text;
+        background-position: 0 0;
+        animation: back 20s linear infinite;
+    }
+
+    @keyframes back{
+        100%{
+            background-position: 2000px 0;
+        }
+    }
+
+    .main-ligne {
+        border: none;
+        height: 1px;
+        background-color: #333;
+        margin: 10px 50px;
+    }
+
+    .nav-items {
+        margin-top: 30px;
+        margin-bottom: 170px;
+    }
+
+    .nav-items a {
+        color: black;
+        text-decoration: none;
+        margin-right: 20px;
+        font-family: 'Prompt', sans-serif;
+        position: relative;
+    }
+
+    .nav-items a::after {
+        content: '';
+        width: 0;
+        height: 3px;
+        position: absolute;
+        bottom: -1px;
+        left: 50%;  
+        transform : translateX(-50%);
+        background: black;
+        transition: width 0.3s;
+    }
+
+    .nav-items a:hover::after {
+        width: 50%;
+    }
+
+    .floating-element {
+        position: relative;
+        animation: floatingAnimation 3s infinite ease-in-out;
+    }
+
+    @keyframes floatingAnimation {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-30%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    section {
+        margin: 0;
+        padding: 0;
+        color: #CECECE;
+        background-color: #CECECE;
+        text-align: center;
+        background-image: linear-gradient(to bottom, #CECECE, #F3F3F3);
+    }
+
+    section h1 {
+        font-size: 100px;
+        font-family: "Cinzel", serif;
+        font-weight: 400;
+        color: #18263B;
+        margin-bottom: 10px;
+    }
+
+    .icon {
+        width: 65px;
+        margin-top: 60px;
+        margin-bottom: 150px;
+        position: relative;
+        animation: floatingAnimation 3s infinite ease-in-out;
+        align-items: center;
+    }
+
+    section h2 {
+        margin-top: 10px;
+        font-family: "Rozha One", serif;
+        color: #04182C;
+        font-size: 70px;
+        font-weight: 100;
+    }
+
+    .box {
+        font-size: 20px;
+        background-color: #98ABBD;
+        margin-left: 500px;
+        margin-right: 500px;
+        margin-bottom: 100px;
+        height: 300px;
+        text-align: center;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 4px rgba(4, 24, 44, 0.5);
+    }
+
+
+    .box ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .box li {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        font-family: "Prompt", sans-serif;
+    }
+
+    .box a {
+        text-decoration: none;
+        color: #04182C;
+        position: relative;
+        text-align: center;
+    }
+
+    .box a::after {
+        content: '';
+        width: 0;
+        height: 2px;
+        position: absolute;
+        bottom: -1px;
+        left: 50%;  
+        transform : translateX(-50%);
+        background: #04182C;
+        transition: width 0.3s;
+    }
+
+    .box a:hover::after {
+        width: 50%;
+    }
+
+    .mouvement {
+        margin-top: 100px;
+        margin-bottom: 150px;
+    }
+
+    .mouvement h1 {
+        text-align: center;
+        color: #050427;
+        font-family: "Barcelony", serif;
+        font-size: 80px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    .mouvement h2 {
+        text-align: center;
+        color: #18558E;
+        font-size: 45px;
+        margin-top: 10px;
+    }
+
+    .mouvement h3 {
+        text-align: center;
+        color: #0B2244;
+        font-family: "Raleway", serif;
+        font-size: 35px;
+        font-weight: 400;
+    }
+
+    .mouvement h4 {
+        text-align: center;
+        color: #0B2244;
+        font-family: "Raleway", serif;
+        font-size: 35px;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+
+    .mouvement h5 {
+        text-align: center;
+        color: #0B2244;
+        font-family: "Raleway", serif;
+        font-size: 35px;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+
+    .mouvement p {
+        text-align: left;
+        margin-left: 250px;
+        margin-right: 250px;
+        color: black;
+        font-family: "Space Mono", monospace;
+    }
+
+    .liste-gauche {
+        text-align: left;
+        margin-left: 250px;
+        margin-right: 250px;
+        color: black;
+        font-family: "Space Mono", monospace;
+    }
+
+    .liste-centre {
+        text-align: center;
+        margin-left: 250px;
+        margin-right: 250px;
+        margin-top: 10px;
+        color: black;
+        font-family: "Space Mono", monospace;
+        list-style-position: inside;
+    }
+
+    .button {
+        display: inline-block;
+        border: 2px solid #072A5F; 
+        padding: 10px 20px; 
+        transition: transform 0.3s; 
+        text-decoration: none; 
+        font-size: 30px;
+        color: #072A5F;
+        font-family: "Harmony", serif;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    .button:hover {
+      transform: scale(1.1); 
+    }
+
+    footer {
+            margin-top: 300px;
+            background-color: black;
+        }
+        
+        .piedContenu {
+            width: 100%;
+            padding: 70px 0px 20px;
+        }
+
+        .app {
+            display: flex;
+            justify-content: center;
+        }
+
+        .app a {
+            text-decoration: none;
+            padding: 10px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%;
+        }
+
+        .app a i {
+            font-size: 2em;
+            color: black;
+            opacity: 0.9
+        }
+
+        .app a:hover{
+            background-color: black;
+            transition: 0.5s;
+        }
+
+        .app a:hover i{
+            background-color: white;
+            transition: 0.5s;
+        }
+
+        .nav {
+            margin: 30px 0;
+        }
+
+        .nav ul {
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .nav ul li a {
+            color: white;
+            margin: 20px;
+            text-decoration: none;
+            font-size: 1.3em;
+            opacity: 0.7;
+            transition: 0.5s;
+            font-family: "Prompt", sans-serif;
+        }
+
+        .nav ul li a:hover {
+            opacity: 1;
+        }
+
+        .bottom {
+            background-color: black;
+            padding: 0px;
+            text-align: center;
+        }
+
+        .bottom p {
+            color: white;
+        }
+
+</style>
+<body>
+    <header>
+        <h1>BOOST YOUR BAC</h1>
+        <hr class="main-ligne">
+        <div class="nav-items">
+            <a href="squelette.html"><i class="uil uil-estate"></i> Accueil</a>
+            <a href="oeuvre.html"><i class="uil uil-book-open"></i> Oeuvre</a>
+            <a href="mouvement.html"><i class="uil uil-edit-alt"></i> Mouvements</a>
+            <a href="méthodologie.html"><i class="uil uil-setting"></i> Méthodologie</a>
+            <a href="squelette.html#apropos"><i class="uil uil-info-circle"></i> À propos</a>
+            <a href="#joinus"><i class="uil uil-message"></i> Join us</a>
+        </div>
+    </header>
+    <section>
+        <h1>Les mouvements</h1>
+        <img class="icon" src="photos/montagnes.png">
+
+        <h2>Sommaire</h2>
+        <div class="box">
+            <ul>
+                <li><a href="#humanisme">Humanisme</a></li>
+                <li><a href="#classicisme">Classicisme</a></li>
+                <li><a href="#naturalisme">Naturalisme</a></li>
+                <li><a href="#realisme">Réalisme</a></li>
+                <li><a href="#romantisme">Romantisme</a></li>
+                <li><a href="#symbolisme">Symbolisme</a></li>
+                <li><a href="#lumières">Les lumières</a></li>
+            </ul>
+        </div>
+
+        <img class="icon" src="photos/livre.png">
+
+        <div class="mouvements">
+            <div id="humanisme" class="mouvement">
+                <h1>L'humanisme</h1>
+                <h2>XV-XVIe siècle</h2>
+                <h3>Principes</h3>
+                <p>L’humanisme se caractérise par l’intérêt nouveau pour toutes les formes de savoir et de connaissance. Une manière d’appréhender le monde qui vise à permettre à l’homme d’accéder au bonheur et de s’épanouir. Il devient plus autonome, moins dépendant de la religion mais aussi plus libre de choisir la vie qui lui correspond.</p>
+                <ul class="liste-gauche">
+                  <li><strong>Un intérêt pour les textes grecs et latin de l’Antiquité</strong>: la traduction des textes antiques doit permettre aux hommes d’accéder à un savoir nouveau en redécouvrant la philosophie de l’Antiquité. Une démarche qui va également conduire Erasme à proposer une nouvelle édition du Nouveau Testament offrant pour la première fois une version grecque du texte en regard de la traduction latine appelée la Vulgate. Une édition qui fit date et provoqua un véritable séisme, le texte présentant des divergences importantes avec la version latine.</li>
+                  <li><strong>S’instruire pour être libre</strong>: la connaissance et le savoir sont vus comme des clés permettant aux hommes d’être libres et heureux.</li>
+                  <li><strong>La découverte du monde et d’autres cultures, l’enseignement</strong>: l’humanisme veut promouvoir l’enseignement de nouvelles disciplines, encourager l’apprentissage des langues. François 1er crée notamment en 1530 le Collège des lecteurs royaux, qui deviendra le Collège de France.</li>
+                  <li><strong>La foi en l’homme</strong>: l’homme est au centre de tout. L’être humain est, comme le dit le penseur grec Protagoras, “la mesure de toute chose”.</li>
+                  <li><strong>La réflexion politique et l’art de gouverner</strong>: Machiavel va être le premier à dissocier politique et religion, politique et morale. Il faut, dit-il "s'en tenir à la vérité de la chose".</li>
+                  <li><strong>La religion</strong>: L’humanisme va conduire à l’émergence de débats autour de la religion et d’un véritable renouveau spirituel. Dieu n’est plus au centre de toutes choses, l’homme l’est.</li>
+                </ul>
+                <h4>Quelques auteurs</h4>
+                <ul class="liste-centre">
+                  <li>Erasme</li>
+                  <li>François Rabelais</li>
+                  <li>Clément Marot</li>
+                  <li>Michel de Montaigne</li>
+                  <li>Pierre de Ronsard</li>
+                  <li>Joachim du Bellay</li>
+                  <li>Thomas More</li>
+                  <li>Machiavel</li>
+                </ul>
+
+                <h5>Quelques oeuvres</h5>
+                <ul class="liste-centre">
+                  <li>Eloge de la folie</li>
+                  <li>Gargantua</li>
+                  <li>Les Essais</li>
+                  <li>L’Utopie</li>
+                  <li>Le Prince</li>
+                </ul>
+
+                <a id="fichier" href="https://docs.google.com/document/d/1NTIXiwvgQzrYtRuuojNS9rp-6c6tOd1ddfeFPL7BHkQ/edit?usp=sharing" target="_blank">
+                <div class="button">Télécharger</div></a>
+            </div>
+
+            <div id="classicisme" class="mouvement">
+                <h1>Le Classicisme</h1>
+                <h2>XVI-XVIIe siècle</h2>
+                <h3>Principes</h3>
+                <p>Les écrivains classiques s'inspirent des œuvres antiques considérées comme des modèles de perfection. Ils privilégient la sobriété et le bon goût, recourent à une langue claire et élégante, à un style concis et raffiné. Ils respectent une codification rigoureuse qui assure la vraisemblance et la bienséance de rigueur.</p>
+                <h4>Quelques auteurs</h4>
+                <ul class="liste-centre">
+                    <li>Racine</li>
+                    <li>Molière</li>
+                    <li>La Fontaine</li>
+                    <li>Mme de Lafayette</li>
+                    <li>La Bruyère</li>
+                  </ul>
+                <h5>Quelques oeuvres</h5>
+                <ul class="liste-centre">
+                    <li>Phèdre</li>
+                    <li>Le Misanthrope</li>
+                    <li>Fables</li>
+                    <li>Les Caractères</li>
+                    <li>La Princesse de Clèves</li>
+                  </ul>
+                <a id="fichier" href="https://docs.google.com/document/d/1NTIXiwvgQzrYtRuuojNS9rp-6c6tOd1ddfeFPL7BHkQ/edit?usp=sharing" target="_blank">
+                <div class="button">Télécharger</div></a>
+            </div>
+
+            <div id="naturalisme" class="mouvement">
+                <h1>Le naturalisme</h1>
+                <h2>1860-1890</h2>
+                <h3>Principes</h3>
+                <p>En philosophie, le naturalisme est la conception d'après laquelle tout ce qui existe – objets et événements – peut être expliqué par des causes ou des principes naturels. Écartant toute forme de transcendance, le naturalisme conçoit l'activité philosophique dans le prolongement de l'activité scientifique. École littéraire amorcée par le réalisme, groupée autour de Zola, qui visait, par l'application à l'art des méthodes et des résultats de la science positive, à reproduire la réalité avec une objectivité parfaite et dans tous ses aspects, même les plus vulgaires.</p>
+                <h4>Quelques auteurs</h4>
+                <ul class="liste-centre">
+                    <li>Honoré de Balzac</li>
+                    <li>Gustave Flaubert</li>
+                    <li>Emile Zola</li>
+                    <li>Guy de Maupassant</li>
+                  </ul>
+                <h5>Quelques oeuvres</h5>
+                <ul class="liste-centre">
+                    <li>La Fortune des Rougon</li>
+                    <li>L'Assommoir</li>
+                    <li>Germinie Lacerteux</li>
+                    <li>À vau-l'eau</li>
+                  </ul>
+                <a id="fichier" href="https://docs.google.com/document/d/1NTIXiwvgQzrYtRuuojNS9rp-6c6tOd1ddfeFPL7BHkQ/edit?usp=sharing" target="_blank">
+                <div class="button">Télécharger</div></a>
+            </div>
+
+            <div id="realisme" class="mouvement">
+                <h1>Le réalisme</h1>
+                <h2>1850-1885</h2>
+                <h3>Principes</h3>
+                <p>Le récit réaliste raconte avant tout le réel, la réalité. Ainsi les sujets des récits réalistes sont tirés du vécu et mettent en scène des personnages ordinaires. Les auteurs ont le goût du détail, se documentent en général avant d'écrire, et se montrent les plus neutres possible. Le réalisme (ou naturalisme) au 19e siècle est un mouvement littéraire s'opposant au romantisme qui le précède et au symbolisme qui le suit. Le réalisme se définit principalement comme opposition à ce qu'il nomme l'espoir ou l'illusion idéalistes d'un système international fondé sur la négation de la force et la valeur absolue accordée à une idée ou à une loi (c'est-à-dire le droit international) – idéalismes idéologique ou légal. Rejetant les sujets « nobles » et l'expression effusive des sentiments de l'âme qui caractérisaient le romantisme, les écrivains réalistes se donnent pour but de représenter fidèlement la société de leur temps, même dans ses détails les plus sordides.</p>
+                <h4>Quelques auteurs</h4>
+                <ul class="liste-centre">
+                    <li>Flaubert</li>
+                    <li>Zola</li>
+                    <li>Maupassant</li>
+                    <li>Honoré de Balzac</li>
+                    <li>Stendhal</li>
+                </ul>
+                <h5>Quelques oeuvres</h5>
+                <ul class="liste-centre">
+                    <li>La Comédie humaine</li>
+                    <li>Madame Bovary</li>
+                    <li>Les frères Goncourt</li>
+                    <li>Les Rougon-Macquart</li>
+                  </ul>
+                <a id="fichier" href="https://docs.google.com/document/d/1NTIXiwvgQzrYtRuuojNS9rp-6c6tOd1ddfeFPL7BHkQ/edit?usp=sharing" target="_blank">
+                <div class="button">Télécharger</div></a>
+            </div>
+
+            <div id="romantisme" class="mouvement">
+                <h1>Le romantisme</h1>
+                <h2>XIXe siècle</h2>
+                <h3>Principes</h3>
+                <p>Le Romantisme se caractérise par la dominance de la sensibilité, de l'émotion et de l'imagination sur la raison et la morale. Les artistes peignent en affirmant leurs idées et en laissant apparaître avec passion leurs impressions et sentiments personnels à travers leurs œuvres. En littérature, le romantisme réclame la libre expression de la sensibilité et, prônant le culte du moi, il affirme son opposition à l'idéal classique. Il se caractérise par une réaction du sentiment contre la raison. Il se caractérise par l'importance accordée au « moi », aux sentiments souvent engendrés par le « Mal du siècle ».</p>
+                <h4>Quelques auteurs</h4>
+                <ul class="liste-centre">
+                    <li>Victor Hugo</li>
+                    <li>Alfred de Musset</li>
+                    <li>François-René de Chateaubriand</li>
+                    <li>Madame de Staël</li>
+                </ul>
+                <h5>Quelques oeuvres</h5>
+                <ul class="liste-centre">
+                    <li>René</li>
+                    <li>Méditations poétiques</li>
+                    <li>Les Feuilles d'automne</li>
+                    <li>La Confession d'un enfant du siècle</li>
+                  </ul>
+                <a id="fichier" href="https://docs.google.com/document/d/1NTIXiwvgQzrYtRuuojNS9rp-6c6tOd1ddfeFPL7BHkQ/edit?usp=sharing" target="_blank">
+                <div class="button">Télécharger</div></a>
+            </div>
+
+            <div id="symbolisme" class="mouvement">
+                <h1>Le symbolisme</h1>
+                <h2>1870-1890</h2>
+                <h3>Principes</h3>
+                <p>Le symbolisme en littérature trouve ses origines dans « Les Fleurs du Mal » de Charles Baudelaire (1821-1867) dont la publication remonte à 1857. Les traductions des travaux d'Edgar Allan Poe par Baudelaire eurent également une influence significative sur le mouvement. Par opposition au naturalisme et au Parnasse, il cherche à développer un art nouveau qui évoque les choses au moyen des sensations et des impressions qu'elles provoquent, pour en montrer l'essence spirituelle. Les auteurs symbolistes veulent s'affranchir de toute autorité, des valeurs bourgeoises et des contraintes formelles. Ils développent un pessimisme mélancolique. Ils utilisent des images morbides qui côtoient parfois l'ironie et la parodie.Pour découvrir ce qui se cache derrière les apparences, pour déchiffrer le mystère des choses, le poète symboliste a recours aux symboles et aux images.</p>
+                <h4>Quelques auteurs</h4>
+                <ul class="liste-centre">
+                    <li>Paul Verlaine</li>
+                    <li>Arthur Rimbaud</li>
+                    <li>Joris-Karl Huysmans</li>
+                    <li>Charles Baudelaire</li>
+                    <li>Stéphane Mallarmé</li>
+                  </ul>
+                <h5>Quelques oeuvres</h5>
+                <ul class="liste-centre">
+                    <li>Poèmes saturniens</li>
+                    <li>Une saison en enfer</li>
+                    <li>Les Illuminations</li>
+                    <li>Poésies</li>
+                    <li>Les Fleurs du Mal</li>
+                  </ul>
+                <a id="fichier" href="https://docs.google.com/document/d/12RKkPuVaRK43YpLfxwkQut-4DqdxmStzfxfd45VbpPE/edit?usp=sharing" target="_blank">
+                <div class="button">Télécharger</div></a>
+            </div>
+
+            <div id="lumières" class="mouvement">
+                <h1>Les Lumières</h1>
+                <h2>XVIIIe siècle</h2>
+                <h3>Principes</h3>
+                <p>Ce mouvement littéraire qui s'étend de 1715 à 1789 veut mettre les connaissances (les Lumières) à la portée de tous et combattre l'obscurantisme et l'ignorance (les ténèbres). Il revendique la tolérance, et met la foi dans le progrès et non plus en Dieu. Les philosophes et écrivains des Lumières veulent aussi démontrer que la recherche du bonheur doit être le but de la vie humaine. Ils aident leurs contemporains à développer leur sens critique, à penser par eux-mêmes, et à s'affranchir de toutes leurs superstitions. Ils luttent également contre l'intolérance religieuse. Ces idées seront reprises lors de la rédaction des cahiers de doléances juste avant la Révolution française.</p>
+                <h4>Quelques auteurs</h4>
+                <ul class="liste-centre">
+                    <li>Locke</li>
+                    <li>Voltaire</li>
+                    <li>Montesquieu</li>
+                    <li>Rousseau</li>
+                    <li>Diderot</li>
+                    <li>d'Alembert</li>
+                  </ul>
+                <h5>Quelques oeuvres</h5>
+                <ul class="liste-centre">
+                    <li>L'Encyclopédie</li>
+                    <li>Candide</li>
+                    <li>Traité sur la tolérance</li>
+                    <li>Lettres persanes</li>
+                  </ul>
+                <a id="fichier" href="https://docs.google.com/document/d/1NTIXiwvgQzrYtRuuojNS9rp-6c6tOd1ddfeFPL7BHkQ/edit?usp=sharing" target="_blank">
+                <div class="button">Télécharger</div></a>
+            </div>
+
+            <img class="icon" src="photos/tulipes.png">
+
+        </div>
+    </section>
+    <footer>
+        <div id="joinus" class="piedContenu">
+            <div class='app'>
+                <a href=""><i class="uil uil-facebook"></i></a>
+                <a href=""><i class="uil uil-twitter"></i></a>
+                <a href=""><i class="uil uil-instagram"></i></a>
+                <a href=""><i class="uil uil-whatsapp"></i></a>
+                <a href=""><i class="uil uil-youtube"></i></i></a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="">Accueil</a></li>
+                    <li><a href="">A propos</a></li>
+                    <li><a href="">Notre équipe</a></li>
+                    <li><a href="">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <p>Copyright @2023; Designed by Maryam Moukdar and Co</p>   
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Les caractères</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="icon" href="file:///C:/Users/HP/Desktop/autre%20trucs/site%20bis/squelette.html" type="photos/byblogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;500&family=Prompt:ital,wght@0,100;0,200;0,300;0,700;0,800;0,900;1,100;1,200&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rozha+One&display=swap" rel="stylesheet">
+</head>
+<style>
+    @font-face {
+        font-family: "Harmony";
+        src: url("fonts/Harmony.otf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Hand";
+        src: url("fonts/ShadowHand.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Barcelony";
+        src: url("fonts/Barcelony.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Soria";
+        src: url("fonts/soria-font.woff") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Espagna";
+        src: url("fonts/Creme Espana.otf") format("truetype");
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        color: #CECECE;
+        background-color: #CECECE;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    header {
+        background-color: #CECECE;
+        color: black;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    header h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 99px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+        font-family: 'Cinzel Decorative', cursive;
+        color: transparent;
+        -webkit-text-stroke: 2px #111D4A;
+        background: url(photos/back.png);
+        -webkit-background-clip: text;
+        background-position: 0 0;
+        animation: back 20s linear infinite;
+    }
+
+    @keyframes back{
+        100%{
+            background-position: 2000px 0;
+        }
+    }
+
+    .main-ligne {
+        border: none;
+        height: 1px;
+        background-color: #333;
+        margin: 10px 50px;
+    }
+
+    .nav-items {
+        margin-top: 30px;
+        margin-bottom: 170px;
+    }
+
+    .nav-items a {
+        color: black;
+        text-decoration: none;
+        margin-right: 20px;
+        font-family: 'Prompt', sans-serif;
+        position: relative;
+    }
+
+    .nav-items a::after {
+        content: '';
+        width: 0;
+        height: 3px;
+        position: absolute;
+        bottom: -1px;
+        left: 50%;  
+        transform : translateX(-50%);
+        background: black;
+        transition: width 0.3s;
+    }
+
+    .nav-items a:hover::after {
+        width: 50%;
+    }
+
+    .img-first {
+        size: 1000px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transform: scale(1);
+        margin-top: 100px;
+        margin-bottom: 200px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    section {
+         background-image: linear-gradient(to bottom, #CECECE, #F3F3F3);
+        color: black;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    section h1 {
+        font-family: "Espagna", serif;
+        color: #195B62;
+        text-align: center;
+        font-size: 170px;
+        font-weight: 200;
+        margin-bottom: -100px;
+        margin-top: 100px;
+    }
+
+    section h2 {
+        font-family: "Rozha One", serif;
+        font-size: 70px;
+        font-weight: 100;
+        color: #359898;
+        text-align: center;
+        margin-top: -40px;
+    }
+
+    .img-couv {
+        size: 1000px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transform: scale(0.7);
+        margin-top: -100px;
+        transition: transform 0.3s ease;
+        border-radius: 10px;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    .img-couv:hover {
+        transform: scale(0.9);
+    }
+
+    section h3 {
+        color: #123B54;
+        font-family: "Barcelony", serif;
+        font-size: 70px;
+        margin-top: -80px;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .box {
+        font-size: 20px;
+        background-color: #CFE2E0;
+        margin-left: 500px;
+        margin-right: 500px;
+        height: 195px;
+        text-align: center;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 4px rgba(97, 171, 162, 0.9);
+    }
+
+    .box ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .box li {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        font-family: "Prompt", sans-serif;
+    }
+
+    .box a {
+        text-decoration: none;
+        color: #123B54;
+        position: relative;
+        text-align: center;
+    }
+
+    .box a::after {
+        content: '';
+        width: 0;
+        height: 2px;
+        position: absolute;
+        bottom: -1px;
+        left: 50%;  
+        transform : translateX(-50%);
+        background: #123B54;
+        transition: width 0.3s;
+    }
+
+    .box a:hover::after {
+        width: 50%;
+    }
+
+    .floating-element {
+        position: relative;
+        animation: floatingAnimation 3s infinite ease-in-out;
+    }
+
+    @keyframes floatingAnimation {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-30%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    .flower {
+        width: 65px;
+        margin-top: 150px;
+        margin-bottom: 100px;
+        position: relative;
+        animation: floatingAnimation 3s infinite ease-in-out;
+        align-items: center;
+    }
+
+    .titre {
+        text-align: center;
+        font-size: 70px;
+        color: #359898;
+        font-family: "Hand", sans-serif;
+        margin-top: 100px;
+        margin-bottom: 10px;
+    }
+
+    .portrait {
+        width: 200px;
+        height: auto;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    section h5 {
+        text-align: center;
+        color: black;
+        font-size: 40px;
+        margin-top: 10px;
+        font-family: "Barcelony", serif;
+        font-weight: 200;
+    }
+
+    section p {
+        size: 30px;
+        text-align: left;
+        margin-right: 300px;
+        margin-left: 300px;
+        line-height: 1.5;
+        font-family: "Space Mono", monospace;
+    }
+
+    section li {
+        size: 30px;
+        text-align: left;
+        margin-right: 300px;
+        margin-left: 300px;
+        line-height: 1.5;
+        font-family: "Space Mono", monospace;
+    }
+
+    section h6 {
+        font-size: 30px;
+        font-family: "Cinzel", serif;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 200px;
+        margin-right: 200px;
+
+    }
+
+    .icon img{
+        width: 65px;
+        margin-top: 200px;
+        margin-bottom: 10px;
+        position: relative;
+        animation: floatingAnimation 3s infinite ease-in-out;
+        align-items: center;
+    }
+
+    .button {
+      display: inline-block;
+      border: 2px solid #000; 
+      padding: 10px 20px; 
+      transition: transform 0.3s; 
+      text-decoration: none; 
+      font-size: 30px;
+      color: black;
+      font-family: "Harmony", serif;
+      margin-top: 50px;
+      margin-bottom: 100px;
+    }
+
+    .button:hover {
+      transform: scale(1.1); 
+    }
+
+</style>
+<body>
+    <header>
+        <h1>BOOST YOUR BAC</h1>
+        <hr class="main-ligne">
+        <div class="nav-items">
+            <a href="squelette.html"><i class="uil uil-estate"></i> Accueil</a>
+            <a href="oeuvre.html"><i class="uil uil-book-open"></i> Oeuvre</a>
+            <a href="mouvement.html"><i class="uil uil-edit-alt"></i> Mouvements</a>
+            <a href="méthodologie.html"><i class="uil uil-setting"></i> Méthodologie</a>
+            <a href="squelette.html#apropos"><i class="uil uil-info-circle"></i> À propos</a>
+            <a href="joinus.html"><i class="uil uil-message"></i> Join us</a>
+        </div>
+    </header>
+    <section>
+        <img class="img-first" src="photos/image/couv-fleurmal.png">
+        <h1>Les fleurs du mal</h1>
+        <h2>-Charles Baudelaire-</h2>
+        <img class="img-couv" src="photos/fleursdumal.jpeg">
+        <h2>1857</h2>
+        <h3>Alchimie poétique : la boue et l'or</h3>
+
+        <div class="box">
+            <ul>
+                <li><a href="#auteur">Auteur</a></li>
+                <li><a href="#resume">Résumé</a></li>
+                <li><a href="#personnages">Personnages</a></li>
+                <li><a href="#themes">Thèmes</a></li>
+                <li><a href="#fichier">Télécharger</a></li>
+            </ul>
+        </div>
+
+        <img class="flower" src="photos/marguerite.png">
+
+        <div class="texte">
+            <h4 id="auteur" class="titre">Auteur</h4>
+            <img class="portrait" src="photos/portrait/baudelaire.jpg">
+            <h5>Charles Baudelaire</h5>
+            <p>Né à Paris, Charles Baudelaire, orphelin de père à 6 ans, n'accepte pas le remariage de sa mère avec le général Aupick et restera toujours opposé à ce militaire et aux valeurs bourgeoises qu'il incarne. Destiné à faire des études de droit, il est renvoyé du lycée Louis le Grand pour son attitude rebelle à l'autorité. Après avoir obtenu le baccalauréat, il choisit une vie de bohème dans le Quartier Latin. En 1841, sa famille l'incite à embarquer sur un paquebot pour les Indes. De ce voyage qu'il écourte avant son terme à l'île Maurice, il gardera de multiples impressions qui l'inspireront dans certaines de ses œuvres (L'Albatros, Parfum exotique, etc.). De retour à Paris en 1842, Charles Baudelaire mène une vie dissolue et commence à dilapider l'héritage qu'il reçoit de son père à sa majorité. Ayant été mis sous conseil judiciaire par sa famille, il devient, pour vivre, journaliste et critique d'art. Il admire les œuvres d'Eugène Delacroix et d'Edgar Poe dont il traduit des œuvres. Il commence alors à écrire des poèmes qu'il publie dans des revues mais qui rencontrent peu d'écho auprès du public. En 1848, il s'engage aux côtés des républicains, mais ses ardeurs révolutionnaires s'éteignent rapidement avec ses lectures de l'écrivain et philosophe contre-révolutionnaire, Joseph de Maistre (1753-1821). En 1857, Charles Baudelaire publie son œuvre majeure, le recueil de poèmes, "Les Fleurs du Mal". L'ouvrage est condamné "pour outrage à la morale publique et aux bonnes mœurs". Avec son éditeur, Baudelaire doit payer une lourde amende et supprimer certains passages. En 1860, il publie Les Paradis Artificiels, puis l'année suivante une nouvelle version des "Fleurs du Mal", expurgée des six poèmes litigieux. Ce n'est qu'en 1949 que la justice réhabilitera "Les Fleurs du mal". Le poète séjourne en Belgique de 1864 à 1866 pour fuir ses dettes et y donner des conférences. Atteint de syphilis, d'hémiplégie et d'aphasie, il est ramené par sa mère à Paris où il meurt l'année suivante de la syphilis et des conséquences de l'abus d'alcool et de drogues. Il est inhumé au cimetière Montparnasse. Héritière de la tradition classique et du romantisme, la poésie de Charles Baudelaire annonce la modernité et fait de lui un précurseur du symbolisme, puis plus tard du surréalisme. Poète torturé et considéré comme maudit, il décrit la dualité entre le bien et le mal, la volupté et la violence, la beauté et la laideur. Non reconnu de son vivant, il ne passe à la postérité qu'après sa mort.</p>
+
+            <h4 id="resume" class="titre">Resume</h4>
+            <p> • <strong>Structure du recueil</strong>: Les Fleurs du Mal peut être considéré comme un « bouquet » de poèmes soigneusement arrangés et accordés entre eux. Le recueil est composé de six parties distinctes, chacune évoquant des thèmes différents.</p>
+        
+            <p> • <strong>Spleen et idéal</strong>: La section Spleen et Idéal (poèmes I à LXXXV) explore les thèmes de la mélancolie, de la tristesse, de la nostalgie, de la beauté, de l'amour et de l'inspiration. Le spleen, une sensation de mal-être profond causée par la solitude, l'ennui, l'angoisse et l'incertitude face à l'avenir, s'oppose à l'idéal, qui renvoie à la quête de perfection, de beauté et d'harmonie. Baudelaire explore ces deux concepts en alternance pour montrer leur lien étroit et leur influence mutuelle.</p>
+
+            <p> • <strong>Tableaux parisiens</strong>: La section Tableaux Parisiens (poèmes LXXXVI à CIII) décrit la ville de Paris, ses habitants, la vie nocturne et la modernité du XIXe siècle. Elle met en évidence la beauté et la laideur de Paris, montrant comment la ville peut être à la fois fascinante et effrayante. Les poèmes dépeignent Paris sous différents angles, évoquant les rues, les ponts, les monuments et offrant une vision contrastée de la vie urbaine.</p>
+
+            <p> • <strong>Le vin</strong>: La section Le vin (poèmes CIV à CVIII) célèbre l'ivresse et le vin, qui sont des thèmes récurrents dans la poésie de Baudelaire. Le vin est perçu comme une source d'inspiration, de plaisir et de liberté. Baudelaire décrit l'ivresse comme un état de transcendance permettant de s'évader de la réalité et de trouver refuge dans les plaisirs de la chair et de l'esprit. Il célèbre les différentes formes de vin et explore les sensations associées à la consommation de cette boisson.</p>
+
+            <p> • <strong>Fleurs du Mal</strong>: La section Les Fleurs du Mal (poèmes CIX à CXVII) explore la condition humaine et les aspects sombres de la vie. Baudelaire y décrit l'angoisse existentielle, la souffrance, la mort et la déchéance. Il exprime sa vision d'un monde cruel et injuste, explorant les thèmes de la solitude, de la maladie et de la dépression. Les poèmes de cette section reflètent les aspects les plus sombres et tragiques de l'existence humaine.</p>
+
+            <p> • <strong>Révolte</strong>: La section Révolte (poèmes CXVIII à CXX) exprime la révolte de Baudelaire contre la société, la morale et les conventions de son époque. Elle met en avant les thèmes de la liberté, de la rébellion et de la subversion, montrant comment l'art peut être un moyen de s'opposer à l'ordre établi. Baudelaire critique la bourgeoisie, la religion, la politique et la morale conventionnelle, dénonçant une société corrompue et hypocrite qui étouffe l'individualité et l'expression de soi.</p>
+
+            <p> • <strong>La mort</strong>: Enfin, la section La mort (poèmes CXXI à CXVI) exprime la fascination de Baudelaire pour la mort. Il explore les thèmes de la mort physique, de la mort de l'amour et de la mort de l'art, montrant comment ces morts sont inséparables de la condition humaine. Baudelaire présente la mort comme à la fois effrayante et séduisante, et montre comment l'art peut être un moyen de transcender cette condition. Les poèmes de cette section reflètent sa vision d'un monde marqué par la mort et oscillent entre impasse et ultime espoir.</p>
+
+            <h4 id="personnages" class="titre">Personnages</h4>
+            <p> Il n'y a pas de personnages dans cette oeuvre, ainsi, l'auteur semble s'adressait aux notions mêmes d'existences et aux fautes dans les fondations essentielles dans la société.</p>
+
+            <h4 id="themes" class="titre">Themes</h4>
+            <p>Les Fleurs du Mal sont ancrées dans plusieurs courants littéraires : le romantisme, le symbolisme et le surréalisme. Voici à ce propos un petit rappel des courants littéraires. À travers le lyrisme, l’expression du moi, le poète met en avant ses sentiments personnels et intimes, souvent liés à l’amour. Baudelaire raconte ainsi dans ses poèmes la déception amoureuse (la séparation, l’amour impossible, la perte de l’être aimé), mais aussi la mélancolie (tristesse profonde), la nostalgie (qui a trait à la fuite du temps) et la solitude.</p>
+
+            <p>En cela, Baudelaire est également une figure de proue du romantisme noir, car il s’inspire du pittoresque et du fantastique issus du Moyen- ge, du roman gothique anglais du XIXe siècle (lié notamment à l’œuvre d’Edgar Poe).</p>
+
+
+        </div>
+        <div class="icon"><img class="cloud" src="photos/nuage.png"></div>
+        <a id="fichier" href="https://docs.google.com/document/d/1NTIXiwvgQzrYtRuuojNS9rp-6c6tOd1ddfeFPL7BHkQ/edit?usp=sharing" target="_blank">
+          <div class="button">Télécharger</div></a>
+    </section>
+</body>
+</html>

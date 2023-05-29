@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Les caractères</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="icon" href="file:///C:/Users/HP/Desktop/autre%20trucs/site%20bis/squelette.html" type="photos/byblogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;500&family=Prompt:ital,wght@0,100;0,200;0,300;0,700;0,800;0,900;1,100;1,200&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rozha+One&display=swap" rel="stylesheet">
+</head>
+<style>
+    @font-face {
+        font-family: "Harmony";
+        src: url("fonts/Harmony.otf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Hand";
+        src: url("fonts/ShadowHand.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Barcelony";
+        src: url("fonts/Barcelony.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Soria";
+        src: url("fonts/soria-font.woff") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Espagna";
+        src: url("fonts/Creme Espana.otf") format("truetype");
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        color: #CECECE;
+        background-color: #CECECE;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    header {
+        background-color: #CECECE;
+        color: black;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    header h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 99px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+        font-family: 'Cinzel Decorative', cursive;
+        color: transparent;
+        -webkit-text-stroke: 2px #111D4A;
+        background: url(photos/back.png);
+        -webkit-background-clip: text;
+        background-position: 0 0;
+        animation: back 20s linear infinite;
+    }
+
+    @keyframes back{
+        100%{
+            background-position: 2000px 0;
+        }
+    }
+
+    .main-ligne {
+        border: none;
+        height: 1px;
+        background-color: #333;
+        margin: 10px 50px;
+    }
+
+    .nav-items {
+        margin-top: 30px;
+        margin-bottom: 170px;
+    }
+
+    .nav-items a {
+        color: black;
+        text-decoration: none;
+        margin-right: 20px;
+        font-family: 'Prompt', sans-serif;
+        position: relative;
+    }
+
+    .nav-items a::after {
+        content: '';
+        width: 0;
+        height: 3px;
+        position: absolute;
+        bottom: -1px;
+        left: 50%;  
+        transform : translateX(-50%);
+        background: black;
+        transition: width 0.3s;
+    }
+
+    .nav-items a:hover::after {
+        width: 50%;
+    }
+
+    .img-first {
+        size: 1000px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transform: scale(2);
+        margin-top: 100px;
+        margin-bottom: 200px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    section {
+         background-image: linear-gradient(to bottom, #CECECE, #F3F3F3);
+        color: black;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    section h1 {
+        font-family: "Espagna", serif;
+        color: #750F0F;
+        text-align: center;
+        font-size: 170px;
+        font-weight: 200;
+        margin-bottom: -100px;
+        margin-top: 100px;
+    }
+
+    section h2 {
+        font-family: "Rozha One", serif;
+        font-size: 70px;
+        font-weight: 100;
+        color: #9F4E3C;
+        text-align: center;
+        margin-top: -40px;
+    }
+
+    .img-couv {
+        size: 1000px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transform: scale(0.7);
+        margin-top: -100px;
+        transition: transform 0.3s ease;
+        border-radius: 10px;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    .img-couv:hover {
+        transform: scale(0.9);
+    }
+
+    section h3 {
+        color: #7A1010;
+        font-family: "Barcelony", serif;
+        font-size: 70px;
+        margin-top: -80px;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .box {
+        font-size: 20px;
+        background-color: #EBCCB7;
+        margin-left: 500px;
+        margin-right: 500px;
+        height: 195px;
+        text-align: center;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 4px rgba(135, 45, 45, 0.5);
+    }
+
+    .box ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .box li {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        font-family: "Prompt", sans-serif;
+    }
+
+    .box a {
+        text-decoration: none;
+        color: #7A1010;
+        position: relative;
+        text-align: center;
+    }
+
+    .box a::after {
+        content: '';
+        width: 0;
+        height: 2px;
+        position: absolute;
+        bottom: -1px;
+        left: 50%;  
+        transform : translateX(-50%);
+        background: #7A1010;
+        transition: width 0.3s;
+    }
+
+    .box a:hover::after {
+        width: 50%;
+    }
+
+    .floating-element {
+        position: relative;
+        animation: floatingAnimation 3s infinite ease-in-out;
+    }
+
+    @keyframes floatingAnimation {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-30%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    .flower {
+        width: 65px;
+        margin-top: 150px;
+        margin-bottom: 100px;
+        position: relative;
+        animation: floatingAnimation 3s infinite ease-in-out;
+        align-items: center;
+    }
+
+    .titre {
+        text-align: center;
+        font-size: 70px;
+        color: #AC422A;
+        font-family: "Hand", sans-serif;
+        margin-top: 100px;
+        margin-bottom: 10px;
+    }
+
+    .portrait {
+        width: 200px;
+        height: auto;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    section h5 {
+        text-align: center;
+        color: black;
+        font-size: 40px;
+        margin-top: 10px;
+        font-family: "Barcelony", serif;
+        font-weight: 200;
+    }
+
+    section p {
+        size: 30px;
+        text-align: left;
+        margin-right: 300px;
+        margin-left: 300px;
+        line-height: 1.5;
+        font-family: "Space Mono", monospace;
+    }
+
+    section li {
+        size: 30px;
+        text-align: left;
+        margin-right: 300px;
+        margin-left: 300px;
+        line-height: 1.5;
+        font-family: "Space Mono", monospace;
+    }
+
+    section h6 {
+        font-size: 30px;
+        font-family: "Cinzel", serif;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 200px;
+        margin-right: 200px;
+
+    }
+
+    .icon img{
+        width: 65px;
+        margin-top: 200px;
+        margin-bottom: 10px;
+        position: relative;
+        animation: floatingAnimation 3s infinite ease-in-out;
+        align-items: center;
+    }
+
+    .button {
+      display: inline-block;
+      border: 2px solid #000; 
+      padding: 10px 20px; 
+      transition: transform 0.3s; 
+      text-decoration: none; 
+      font-size: 30px;
+      color: black;
+      font-family: "Harmony", serif;
+      margin-top: 50px;
+      margin-bottom: 100px;
+    }
+
+    .button:hover {
+      transform: scale(1.1); 
+    }
+
+</style>
+<body>
+    <header>
+        <h1>BOOST YOUR BAC</h1>
+        <hr class="main-ligne">
+        <div class="nav-items">
+            <a href="squelette.html"><i class="uil uil-estate"></i> Accueil</a>
+            <a href="oeuvre.html"><i class="uil uil-book-open"></i> Oeuvre</a>
+            <a href="mouvement.html"><i class="uil uil-edit-alt"></i> Mouvements</a>
+            <a href="méthodologie.html"><i class="uil uil-setting"></i> Méthodologie</a>
+            <a href="squelette.html#apropos"><i class="uil uil-info-circle"></i> À propos</a>
+            <a href="joinus.html"><i class="uil uil-message"></i> Join us</a>
+        </div>
+    </header>
+    <section>
+        <img class="img-first" src="photos/image/couv-caracter.jpeg">
+        <h1>Les caractères</h1>
+        <h2>-La Bruyère-</h2>
+        <img class="img-couv" src="photos/caractères.jpg">
+        <h2>1688</h2>
+        <h3>La comédie sociale</h3>
+
+        <div class="box">
+            <ul>
+                <li><a href="#auteur">Auteur</a></li>
+                <li><a href="#resume">Résumé</a></li>
+                <li><a href="#personnages">Personnages</a></li>
+                <li><a href="#themes">Thèmes</a></li>
+                <li><a href="#fichier">Télécharger</a></li>
+            </ul>
+        </div>
+
+        <img class="flower" src="photos/marguerite.png">
+
+        <div class="texte">
+            <h4 id="auteur" class="titre">Auteur</h4>
+            <img class="portrait" src="photos/portrait/bruyère.jpg">
+            <h5>La Bruyère</h5>
+            <p>Né en 1645, Jean de La Bruyère est un écrivain du XVIIème siècle, auteur d’une œuvre unique, Les Caractères, qui connaît un succès retentissant dès sa publication en 1688 et connaît plusieurs éditions augmentées jusqu’en 1696. Moraliste du Grand siècle qui peint l’âme humaine, il s’inscrit dans le sillage de Montaigne, Pascal et La Rochefoucauld. Dans la célèbre querelle des Anciens et des Modernes, il prend parti pour les Anciens dont il prône l’imitation.</p>
+
+            <h4 id="resume" class="titre">Resume</h4>
+            <p>Dans De la société et de la conversation (livre V), La Bruyère évoque l’art d’être en société. Il dresse le portrait de personnages contraires aux valeurs de civilité, de politesse et d’honnêteté. Dans Des biens de fortune (livre VI), le moraliste met l’accent sur le rôle de l’argent qui déstabilise l’ordre social et crée des différences de fortune ne reposant pas sur le mérite. Dans De la ville (livre VII), il dépeint la ville comme un théâtre où tout est caché, masqué. Les hommes sont rattachés les uns aux autres par le « regard », instrument de comparaison, de malveillance et de moquerie. Dans De la Cour (VIII), La Bruyère présente le tableau satirique de la cour de Louis XIV. Il s’agit d’une société superficielle, soumise au culte des apparences. Il décrit un monde impitoyable où les destinées sont soumises aux lois du hasard et où le destin d’un favori peut être brisé soudainement. 3/6 Dans Des Grands (IX), le moraliste dresse le portrait des hommes de la haute noblesse, orgueilleux, vaniteux, imprévisibles et corrompus. L’auteur oppose le rang social et le mérite. Dans Du Souverain ou de la République (livre X), il critique la guerre et adresse des conseils aux dirigeants et au roi.</p>
+
+            <h4 id="personnages" class="titre">Personnages</h4>
+            <ul>
+              <li><strong>Acis</strong> : Acis, par exemple, est un courtisan, précieux, que La Bruyère critique ouvertement. Il dénonce son ridicule, ses manies, ses faux-semblants.</li>
+              <li><strong>Arrias</strong> : Arrias est un autre personnage, très présomptueux, arrogant, qui croit tout connaître et se vante sans cesse. Il sera également très vivement décrié par La Bruyère dans son texte.</li>
+              <li><strong>Pamphile</strong> :Pamphile, quant à lui, est un personnage qui se veut à la fois généreux et altruiste, mais que La Bruyère critique ouvertement. Il s’agirait en réalité plutôt d’un personnage qui se prend au sérieux, qui vit dans le superficiel et l’éphémère, et qui oublie facilement les vraies valeurs. La Bruyère insiste sur les artifices utilisés par le personnage pour donner le change, et montre qu’il ne faut pas se laisser prendre par le jeu des apparences.</li>
+            </ul>
+
+
+            <h4 id="themes" class="titre">Themes</h4>
+            <h6>Quels sont les thèmes importants dans les livres V à X des Caractères de La Bruyère ?</h6>
+            <p>
+              • <strong>L’honnête homme</strong>:<br>
+              Dans Les Caractères, La Bruyère fait le portrait de l’honnête homme (idéal de l’homme au XVIIème siècle) : un homme mesuré, convenable, cultivé, qui n’essaie pas de paraître pour ce qu’il n’est pas. Ainsi, les portraits satiriques sont à lire comme des contre-modèles de l’honnête homme. Par exemple, <strong>Théodecte (V, 12)</strong> est trop théâtral. Il veut être le centre de tout et a des gestes et des tons de voix excessifs, qui manquent de discrétion. <strong>Narcisse (VII,12)</strong> ne se soucie que de lui-même. L’honnête homme, au contraire, se caractérise par sa modestie, sa mesure et sa maîtrise des relations sociales et de la conversation (livre V, « De la société et de la conversation »).
+            </p>
+
+            <p>
+              • <strong>Le théâtre du monde</strong>:<br>
+              La Bruyère représente le monde comme un théâtre, thème traditionnel dans la littérature moraliste du XVIIème siècle. Le monde est théâtral car chacun met en scène sa richesse et sa fortune, dans une société régie par l’artifice et la superficialité. Ainsi, le regard est omniprésent dans Les Caractères. Tout est spectacle et destiné à être vu : « “L’on se donne à Paris (…) pour se regarder au visage et se désapprouver les uns les autres” » (<strong>VII, remarque 1</strong>). La Bruyère décrit même un « “spectateur de profession” » (<strong>VII, remarque 13</strong>) qui passe sa vie à fréquenter la Cour et la ville pour voir et être vu. Sur cette scène, chaque courtisan est un acteur « “maître de son geste, de ses yeux et de son visage” » (<strong>VIII, remarque 2</strong>). Cette comédie sociale est néfaste car l’art de la dissimulation détruit le « naturel », très important au XVIIème siècle.
+            </p>
+
+            <p>
+              • <strong>La Cour et la ville</strong>:<br>
+              Dans le livre VIII, La Bruyère s’intéresse particulièrement à deux espaces qui amoindrissent les vertus de l’homme et font ressortir ses vices : la Cour et la ville. Pour La Bruyère, ce sont les lieux du changement perpétuel. Rien n’y est stable, tout y est en mouvement, ce qui ne peut que déplaire au moraliste qui souhaite l’équilibre, la raison, et la perpétuation de la tradition. Le champ lexical de l’agitation caractérise par exemple le portrait de Cimon et Clitandre qui « “portent au vent, attelés tous deux au char de la fortune, et tous deux fort éloignés de s’y voir assis” » (<strong>VIII, remarque 9</strong>). La Cour et la ville sont également dominées par la figure de la Roue de Fortune
+
+             qui fait et défait les destins à l’aveugle. Celui qui vient d’être placé à un nouveau poste en sera rapidement déchu (<strong>VIII, remarque 32</strong>). Dans ces espaces, les hommes sont en esclavage : « “Qui est plus esclave qu’un courtisan assidu, si ce n’est un courtisan plus assidu” » (<strong>VIII, remarque 69</strong>)
+            </p>
+
+            <p>
+              • <strong>L’argent</strong>:<br>
+              Dans le livre VI « Des biens de Fortune », La Bruyère dénonce la supériorité de l’argent sur la vertu. En effet, l’argent perturbe l’ordre social censé être régi par le mérite aristocratique. Ainsi, Giton représente l’allégorie des fortunés se donnant tous les droits sur les autres en raison de sa richesse (<strong>VI, remarque 83</strong>). Celle-ci ne semble pourtant pas le fruit d’un travail abondant : « « il dort le jour, il dort la nuit » ! L’argent est devenu un instrument de décadence. Dans une société où l’argent est le fondement de l’individu, celui qui n’en possède pas est exclu, comme Phédon que la pauvreté rend inapte à toute interaction sociale (<strong>VI, remarque 83</strong>)
+            </p>
+
+            <p>
+              • <strong>L’art de gouverner</strong>:<br>
+              Dans le livre X « Du Souverain ou de la République », La Bruyère réfléchit au meilleur gouvernement possible. Il critique la tyrannie, « “manière la plus horrible et la plus grossière de se maintenir” » (<strong>X, 2</strong>) ainsi que la guerre et le désir de conquête de certains princes (<strong>X, remarques 9 et 10</strong>). Le roi doit être le « “Père du peuple” » (<strong>X, remarque 27</strong>) et assurer la paix et la tranquillité publique au lieu de poursuivre sa gloire personnelle (<strong>X, remarque 24</strong>). Dans la remarque 29, La Bruyère représente même le Roi comme un berger qui conduit son peuple avec justice, fermeté mais surtout sobriété et humilité. Le prince idéal doit avoir « “une parfaite égalité d’humeur », « le cœur ouvert et sincère” » (<strong>X, 35</strong>), le sens de la mesure, le souci de tous et de chacun. On reconnaît aisément dans cette remarque la transposition de l’idéal de l’honnête homme en politique. Le Roi doit aussi savoir s’entourer. Quand il sélectionne ses ministres, c’est en songeant à ceux qu’aurait choisis son peuple (<strong>X, remarque 23</strong>) : « “C’est un extrême bonheur pour les peuples quand le Prince admet dans sa confiance et choisit pour le ministère ceux qu’ils auraient voulu lui donner s’ils avaient été les maîtres” ».
+            </p>
+        </div>
+        <div class="icon"><img class="cloud" src="photos/nuage.png"></div>
+        <a id="fichier" href="https://docs.google.com/document/d/1NTIXiwvgQzrYtRuuojNS9rp-6c6tOd1ddfeFPL7BHkQ/edit?usp=sharing" target="_blank">
+          <div class="button">Télécharger</div></a>
+    </section>
+</body>
+</html>

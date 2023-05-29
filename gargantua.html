@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gargantua</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="icon" href="file:///C:/Users/HP/Desktop/autre%20trucs/site%20bis/squelette.html" type="photos/byblogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;500&family=Prompt:ital,wght@0,100;0,200;0,300;0,700;0,800;0,900;1,100;1,200&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rozha+One&display=swap" rel="stylesheet">
+</head>
+<style>
+    @font-face {
+        font-family: "Harmony";
+        src: url("fonts/Harmony.otf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Hand";
+        src: url("fonts/ShadowHand.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Barcelony";
+        src: url("fonts/Barcelony.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Soria";
+        src: url("fonts/soria-font.woff") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Espagna";
+        src: url("fonts/Creme Espana.otf") format("truetype");
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        color: #CECECE;
+        background-color: #CECECE;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    header {
+        background-color: #CECECE;
+        color: black;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    header h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 99px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+        font-family: 'Cinzel Decorative', cursive;
+        color: transparent;
+        -webkit-text-stroke: 2px #111D4A;
+        background: url(photos/back.png);
+        -webkit-background-clip: text;
+        background-position: 0 0;
+        animation: back 20s linear infinite;
+    }
+
+    @keyframes back{
+        100%{
+            background-position: 2000px 0;
+        }
+    }
+
+    .main-ligne {
+        border: none;
+        height: 1px;
+        background-color: #333;
+        margin: 10px 50px;
+    }
+
+    .nav-items {
+        margin-top: 30px;
+        margin-bottom: 170px;
+    }
+
+    .nav-items a {
+        color: black;
+        text-decoration: none;
+        margin-right: 20px;
+        font-family: 'Prompt', sans-serif;
+        position: relative;
+    }
+
+    .nav-items a::after {
+        content: '';
+        width: 0;
+        height: 3px;
+        position: absolute;
+        bottom: -1px;
+        left: 50%;  
+        transform : translateX(-50%);
+        background: black;
+        transition: width 0.3s;
+    }
+
+    .nav-items a:hover::after {
+        width: 50%;
+    }
+
+    .img-first {
+        size: 1000px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transform: scale(3);
+        margin-top: 100px;
+        margin-bottom: 200px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    section {
+         background-image: linear-gradient(to bottom, #CECECE, #F3F3F3);
+        color: black;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    section h1 {
+        font-family: "Espagna", serif;
+        color: #082F16;
+        text-align: center;
+        font-size: 170px;
+        font-weight: 200;
+        margin-bottom: -100px;
+        margin-top: 100px;
+    }
+
+    section h2 {
+        font-family: "Rozha One", serif;
+        font-size: 70px;
+        font-weight: 100;
+        color: #244523;
+        text-align: center;
+        margin-top: -40px;
+    }
+
+    .img-couv {
+        size: 1000px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transform: scale(0.7);
+        margin-top: -100px;
+        transition: transform 0.3s ease;
+        border-radius: 10px;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    .img-couv:hover {
+        transform: scale(0.9);
+    }
+
+    section h3 {
+        color: #4A1138;
+        font-family: "Barcelony", serif;
+        font-size: 70px;
+        margin-top: -80px;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .box {
+        font-size: 20px;
+        background-color: #E9DCE0;
+        margin-left: 500px;
+        margin-right: 500px;
+        height: 195px;
+        text-align: center;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 4px rgba(91, 12, 66, 0.5);
+    }
+
+    .box ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .box li {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        font-family: "Prompt", sans-serif;
+    }
+
+    .box a {
+        text-decoration: none;
+        color: #5B0C42;
+        position: relative;
+        text-align: center;
+    }
+
+    .box a::after {
+        content: '';
+        width: 0;
+        height: 2px;
+        position: absolute;
+        bottom: -1px;
+        left: 50%;  
+        transform : translateX(-50%);
+        background: #4A1138;
+        transition: width 0.3s;
+    }
+
+    .box a:hover::after {
+        width: 50%;
+    }
+
+        .floating-element {
+        position: relative;
+        animation: floatingAnimation 3s infinite ease-in-out;
+    }
+
+    @keyframes floatingAnimation {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-30%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    .flower {
+        width: 65px;
+        margin-top: 150px;
+        margin-bottom: 100px;
+        position: relative;
+        animation: floatingAnimation 3s infinite ease-in-out;
+        align-items: center;
+    }
+
+    .titre {
+        text-align: center;
+        font-size: 70px;
+        color: #006238;
+        font-family: "Hand", sans-serif;
+        margin-top: 100px;
+        margin-bottom: 10px;
+    }
+
+    .portrait {
+        width: 200px;
+        height: auto;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    section h5 {
+        text-align: center;
+        color: black;
+        font-size: 40px;
+        margin-top: 10px;
+        font-family: "Barcelony", serif;
+        font-weight: 200;
+    }
+
+    section p {
+        size: 30px;
+        text-align: left;
+        margin-right: 300px;
+        margin-left: 300px;
+        line-height: 1.5;
+        font-family: "Space Mono", monospace;
+    }
+
+    section li {
+        size: 30px;
+        text-align: left;
+        margin-right: 300px;
+        margin-left: 300px;
+        line-height: 1.5;
+        font-family: "Space Mono", monospace;
+    }
+
+    section h6 {
+        font-size: 30px;
+        font-family: "Cinzel", serif;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .icon img{
+        width: 65px;
+        margin-top: 200px;
+        margin-bottom: 10px;
+        position: relative;
+        animation: floatingAnimation 3s infinite ease-in-out;
+        align-items: center;
+    }
+
+    .highlight {
+        border: 2px solid red;     
+        padding: 5px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .button {
+      display: inline-block;
+      border: 2px solid #000; 
+      padding: 10px 20px; 
+      transition: transform 0.3s; 
+      text-decoration: none; 
+      font-size: 30px;
+      color: black;
+      font-family: "Harmony", serif;
+      margin-top: 50px;
+      margin-bottom: 100px;
+    }
+
+    .button:hover {
+      transform: scale(1.1); 
+    }
+
+</style>
+<body>
+    <header>
+        <h1>BOOST YOUR BAC</h1>
+        <hr class="main-ligne">
+        <div class="nav-items">
+            <a href="squelette.html"><i class="uil uil-estate"></i> Accueil</a>
+            <a href="oeuvre.html"><i class="uil uil-book-open"></i> Oeuvre</a>
+            <a href="mouvement.html"><i class="uil uil-edit-alt"></i> Mouvements</a>
+            <a href="méthodologie.html"><i class="uil uil-setting"></i> Méthodologie</a>
+            <a href="squelette.html#apropos"><i class="uil uil-info-circle"></i> À propos</a>
+            <a href="joinus.html"><i class="uil uil-message"></i> Join us</a>
+        </div>
+    </header>
+    <section>
+        <img class="img-first" src="photos/image/couv-garg.jpg">
+        <h1>Gargantua</h1>
+        <h2>-François Rabelais-</h2>
+        <img class="img-couv" src="photos/gargantua.jpg">
+        <h2>1534</h2>
+        <h3>Rire et savoir</h3>
+
+        <div class="box">
+            <ul>
+                <li><a href="#auteur">Auteur</a></li>
+                <li><a href="#resume">Résumé</a></li>
+                <li><a href="#personnages">Personnages</a></li>
+                <li><a href="#themes">Thèmes</a></li>
+                <li><a href="#fichier">Télécharger</a></li>
+            </ul>
+        </div>
+
+        <img class="flower" src="photos/marguerite.png">
+
+        <div class="texte">
+            <h4 id="auteur" class="titre">Auteur</h4>
+            <img class="portrait" src="photos/portrait/rabelais.jpg">
+            <h5>François Rabelais</h5>
+            <p>Les sources divergent sur l'année de naissance de François Rabelais, et sa vie reste mal connue. Il est né dans une famille riche, ce qui lui a permis de bénéficier d'un enseignement dès son plus jeune âge. En 1524, il rentre dans les ordres bénédictins où il poursuit ses études. Mais il rompt avec la vie ecclésiastique en 1527 et se met à parcourir la France. Il fait des études de médecine à Montpellier, puis s'installe à Lyon où il devient un médecin réputé. Rabelais entretient une correspondance avec Erasme qu'il admire et fait plusieurs voyages en Italie. Passionné par le grec, il est décrit comme un érudit bon vivant et un libre penseur. Il n'hésite pas à critiquer la société dans laquelle il vit : il dénonce l'oisiveté des moines, lutte pour la tolérance et la paix. Il meurt à Paris en avril 1553.
+</p>
+            <h4 id="resume" class="titre">Resume</h4>
+            <p>Le livre suit les aventures du géant Gargantua, de son fils Pantagruel et de leurs amis alors qu’ils naviguent à travers un monde fantastique rempli d’humour, de satire et de critique sociale. Le livre commence par le récit de la naissance de Gargantua, fils du seigneur Grandgousier et de sa femme Gargamelle. Il naît dans des conditions exceptionnelles puisqu’il sort de l’oreille de sa mère, après neuf mois de grossesse. Gargantua vient au monde en réclamant à boire, ce qui lui vaut son prénom (quel (gosier) grand tu as). Gargantua est un géant qui grandit rapidement et développe une grande soif de connaissances. Il est confié à l’éducateur humaniste Ponocrates, qui lui enseigne les arts et les sciences. Après avoir terminé son éducation, Gargantua retourne chez son père et règne sur le pays avec sagesse et justice. Cependant, il est bientôt impliqué dans des guerres avec les ennemis de son père et est capturé par les ennemis de son pays. Gargantua parvient à s’échapper et rencontre son fils, Pantagruel, qui est également un géant. Ensemble, ils naviguent à travers des mers dangereuses, combattent des ennemis féroces et rencontrent des personnages étranges et comiques. Au cours de leurs aventures, ils rencontrent des philosophes, des moines, des voyageurs, des rois tyranniques et des gens ordinaires qui ont tous quelque chose à dire sur la vie, la mort, la religion, la politique et la société. Le livre se termine par une série de conseils et de maximes sages qui résument les idées principales de l’auteur sur la nature humaine et la société.
+</p>
+            <h4 id="personnages" class="titre">Personnages</h4>
+            <ul>
+              <li><strong>Gargantua</strong> : le personnage principal du roman, Gargantua est un géant incroyablement grand et fort, fils de Grandgousier et de Gargamelle. Il est éduqué par Ponocrates et devient un sage et un chef juste.</li>
+              <li><strong>Grandgousier</strong> : le père de Gargantua, Grandgousier est un seigneur de la région de Touraine. Il est connu pour sa générosité et sa bonté.</li>
+              <li><strong>Gargamelle</strong> : la mère de Gargantua, Gargamelle est une femme très grande qui meurt en accouchant de son fils.</li>
+              <li><strong>Pantagruel</strong> : le fils de Gargantua, Pantagruel est également un géant. Il est éduqué par son père et devient un héros et un leader militaire.</li>
+              <li><strong>Panurge</strong> : l’un des amis les plus proches de Pantagruel, Panurge est un personnage comique et rusé qui est souvent impliqué dans des intrigues et des aventures loufoques.</li>
+              <li><strong>Frère Jean des Entommeures</strong> : un moine franciscain, Frère Jean est connu pour son appétit insatiable et sa force physique incroyable.</li>
+              <li><strong>Epistémon</strong> : l’un des conseillers de Gargantua, Epistémon est un sage et un philosophe.</li>
+              <li><strong>Ponocrates</strong> : l’éducateur de Gargantua, Ponocrates est un humaniste qui enseigne à Gargantua les arts et les sciences.</li>
+              <li><strong>Hélène de Tournon</strong> : la femme de Pantagruel, Hélène est une belle et vertueuse dame.</li>
+              <li><strong>Xenomanes</strong> : un voyageur grec, Xenomanes est un personnage comique qui raconte des histoires étranges et exotiques.</li>
+              <li><strong>King Anarchus</strong> : un roi tyrannique, Anarchus est un ennemi de Pantagruel qui est finalement vaincu par le héros géant.</li>
+            </ul>
+
+
+            <h4 id="themes" class="titre">Themes</h4>
+            <h6>1/L'éducation</h6>
+            <p>
+              Gargantua suit deux modèles d’éducation diamétralement opposés :
+            </p>
+
+            <p>
+              <b>a. L'éducation médiévale</b><br>
+              <br>
+              • Critique d’un savoir quantitatif et purement formel:<br>
+              Un savoir qui privilégie la quantité à la qualité, la performance d’une mémoire, sans raisonnement. Le savoir livresque amalgame des manuels et références futiles (grammaire archaïque, textes juridiques caduques ; manuels futiles sur le « bien servir à table » …) et repose sur une mémoire mécanique « à l’endroit et à l’envers ».<br>
+              <br>
+              • Critique du mépris de l’hygiène et du corps réduit à ses instincts les plus animaux:<br>
+              Critique qui passe par la goinfrerie dès le lever, l'abus du vin, l'excrétion, la paresse. Les précepteurs méprisent le corps : il n’est nullement sollicité puisque la passivité est de rigueur (lorsque le géant n’étudie pas, il se prélasse ou écoute, recevant passivement).<br>
+              <br>
+              • Critique de l’inefficacité des moyens mis en œuvre:<br>
+              Par la longueur exceptionnelle (54 années) emblématique de son inutilité, l’absence de lien avec la réalité concrète et l’abrutissement final du géant réduit aux larmes face à l’éloquence d’un jeune page éduqué selon les principes humanistes.
+            </p>
+
+            <p>
+              <b>b. L'éducation humaniste : « mens sana in corpore sano »</b><br>
+              <br>
+              • Un bon emploi du temps, basé sur le respect du rythme naturel de l’homme:<br>
+              Chaque instant, l’élève est stimulé pour atteindre une érudition complète : des sciences aux arts, de la religion à l’exercice physique.<br>
+              <br>
+              • Un savoir humaniste basé sur les belles lettres de l’antiquité greco-latine:<br>
+              Une bibliographie fondamentale. L’élève découvre les sciences nouvelles universelles (astronomie, médecine, biologie et la connaissance du monde…) ; les activités humaines (l’artisanat, les métiers…) ; une lecture interprétative rendant la Bible intelligible… La quête d’un savoir encyclopédique est une gloire en faveur du monde en progrès, une confiance en l’homme et ses capacités.<br>
+              <br>
+              • La discipline du corps:<br>
+              Elle commence par un respect rigoureux de l’hygiène, de la diététique toute relative, de l’exercice physique. La formation complète répond à un idéal humaniste d’un esprit sain dans un corps sain, un idéal vers lequel il faut tendre, un idéal en rupture avec le passé.<br>
+              <br>
+              • Le bilan:<br>
+              Le sujet étudiant est actif et constamment sollicité (l’exercice de la raison stimulé par la diversité des apprentissages ; la pratique par l’expérimentation directe ; le contact avec la réalité sociale, professionnelle, culturelle…)<br>
+              Sous le couvert de l’exagération burlesque se dessine un idéal d’éducation humaniste qui sera repris dans l’utopie de Thélème.
+            </p>
+
+            <h6>2/La guerre</h6>
+            <p>
+              L’épisode de la guerre picrocholine présente une démonstration idéologique en défaveur de la guerre de conquête, en faveur de la guerre défensive et la volonté de pacifisme.
+            </p>
+
+            <p>
+              <b>a. La guerre de conquête et la démesure</b><br>
+              <br>
+              • La parodie du récit épique et la démesure du geste guerrier:<br>
+              Par les exploits guerriers de Frère Jean des Entommeures (répondant au thème du gigantisme par l’extraordinaire force de ses coups et la démesure de sa puissance digne des héros de l’Iliade), Rabelais dénonce le non respect des hommes et du sang versé, même lorsqu’ils renoncent, expient, se retirent. Le prêtre s’avère davantage un guerrier qu’un moine, capable d’un extraordinaire massacre commentant avec jubilation les blessures et corps dépecés. La prolifération du langage (multiplication des verbes d’hyperactivité ; l’abondance des descriptions) introduit le thème de la démesure avec humour mais en dénonçant cependant la violence d’une défense n’épargnant personne.<br>
+              <br>
+              • La violence et la déraison d’une guerre de conquête:<br>
+              La violence et la folie de la conquête sont incarnées par Picrochole : il multiplie les exactions et injustices même envers ses sujets. Il est soumis à la violence de son caractère comme le souligne l’onomastique (« Picrochole = bile amère »). Il incarne ainsi l’homme politique agresseur, la politique de guerre de conquête telle que la menait Charles Quint. Le jugement est alors sans appel puisqu’à la démesure de l’ambition répond la démesure de la défaite : le roi est destitué de son trône.
+            </p>
+
+            <p>
+              <b>b. Le pacifisme et la mesure</b><br>
+              <br>
+              • La mesure:<br>
+              Les géants incarnent paradoxalement la mesure et l’esprit pacifique. Ils multiplient les négociations et offres pour apaiser. Lors de la victoire, les rois sont capables de clémence, de pardon, de générosité. L’objectif premier est le retour à la situation initiale.<br>
+              <br>
+              • Préserver la paix à tout prix:<br>
+              Le roi s’investit d’une mission qui va de la tentative de dialogue à l’achat de la paix à tout prix. L’investissement de Grandgousier est avant tout d’ordre intellectuel : il veut « comprendre » et « apaiser », « modérer ». Guider vers la réflexion et le sens du devoir. L’humaniste est investi d’une mission divine qui n’est pas de donner acte de l’existence de Dieu mais le sentiment du devoir et d’un retour sur sa fonction ; et l’exercice de son esprit critique sans céder aux pulsions.<br>
+              <br>
+              D’une volonté de pacifisme, la guerre est parfois inévitable. C’est le thème d’une réflexion de l’époque que celui de « la guerre juste ».<br>
+              <br>
+              • La guerre est « juste » et morale face à la méchanceté et l’injustice:<br>
+              La lettre de Grandgousier envers Gargantua est un modèle de justification de la guerre utile et nécessaire. Elle a pour but la restauration de la paix, en préservant les hommes. Implicitement, se lit un éloge de François 1er et d’un prince défenseur de la paix puisqu’éclairé par les idées humanistes.
+            </p>
+
+        </div>
+        <div class="icon"><img class="cloud" src="photos/nuage.png"></div>
+        <a id="fichier" href="https://docs.google.com/document/d/1NTIXiwvgQzrYtRuuojNS9rp-6c6tOd1ddfeFPL7BHkQ/edit?usp=sharing" target="_blank">
+          <div class="button">Télécharger</div></a>
+    </section>
+</body>
+</html>
